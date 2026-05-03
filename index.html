@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BMW F45 兩人一貓車宿露營設備清單</title>
+  <meta name="description" content="BMW 2015 218d F45 Active Tourer 兩人一貓露營區車宿裝備清單，供露營規劃與採買參考。" />
+  <style>
+    :root{
+      --bg:#f7f2e8;
+      --paper:#fffaf0;
+      --ink:#202118;
+      --muted:#6b675e;
+      --line:#dfd3bd;
+      --forest:#284b3b;
+      --forest-2:#3f6b54;
+      --sage:#dae6d8;
+      --sand:#ead7b6;
+      --clay:#b66b4f;
+      --amber:#dfaa52;
+      --sky:#dce7ea;
+      --danger:#8d3f34;
+      --shadow:0 18px 40px rgba(40, 75, 59, .12);
+      --radius:22px;
+      --radius-sm:14px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:
+        radial-gradient(900px 500px at 8% -5%, rgba(218,230,216,.85), transparent 65%),
+        radial-gradient(700px 440px at 90% 4%, rgba(234,215,182,.9), transparent 60%),
+        var(--bg);
+      color:var(--ink);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;
+      line-height:1.65;
+    }
+    a{color:var(--forest); text-decoration-thickness:2px; text-underline-offset:3px}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 20px 64px}
+    .hero{
+      min-height:360px;
+      border-radius:34px;
+      padding:34px;
+      background:
+        linear-gradient(135deg, rgba(40,75,59,.96), rgba(63,107,84,.88)),
+        linear-gradient(45deg, var(--forest), var(--forest-2));
+      color:#fffaf0;
+      box-shadow:var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::after{
+      content:"";
+      position:absolute; inset:auto -80px -130px auto;
+      width:420px; height:420px; border-radius:50%;
+      background:rgba(234,215,182,.2);
+      filter:blur(2px);
+    }
+    .eyebrow{
+      display:inline-flex; gap:8px; align-items:center;
+      border:1px solid rgba(255,250,240,.35);
+      background:rgba(255,255,255,.08);
+      border-radius:999px;
+      padding:8px 12px;
+      font-size:13px;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+    h1{font-size:clamp(34px,5vw,62px); line-height:1.05; margin:22px 0 18px; letter-spacing:-.04em}
+    .hero p{max-width:760px; font-size:18px; color:rgba(255,250,240,.92)}
+    .hero-grid{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:28px; position:relative; z-index:2}
+    .mini-card{
+      background:rgba(255,250,240,.1);
+      border:1px solid rgba(255,250,240,.2);
+      border-radius:18px;
+      padding:14px 16px;
+      backdrop-filter:blur(6px);
+    }
+    .mini-card strong{display:block; font-size:18px; color:#fff}
+    .mini-card span{font-size:13px; color:rgba(255,250,240,.8)}
+    .toolbar{
+      display:grid; grid-template-columns:1fr auto; gap:14px; margin:22px 0;
+      position:sticky; top:0; z-index:10; padding:12px 0;
+      backdrop-filter:blur(12px);
+    }
+    .searchbox{
+      display:flex; gap:10px; align-items:center; background:rgba(255,250,240,.9);
+      border:1px solid var(--line); border-radius:18px; padding:10px 14px; box-shadow:0 8px 24px rgba(40,75,59,.08);
+    }
+    .searchbox input{width:100%; border:0; outline:0; background:transparent; font:inherit; color:var(--ink)}
+    .btns{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end}
+    button,.chip{
+      border:1px solid var(--line);
+      background:rgba(255,250,240,.9);
+      color:var(--forest);
+      border-radius:999px;
+      padding:9px 13px;
+      font:inherit;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    button.active,.chip.active{background:var(--forest); color:#fffaf0; border-color:var(--forest)}
+    .grid{display:grid; grid-template-columns:280px 1fr; gap:22px; align-items:start}
+    aside{
+      position:sticky; top:84px;
+      background:rgba(255,250,240,.78);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:0 10px 28px rgba(40,75,59,.08);
+    }
+    aside h2{font-size:18px; margin:0 0 10px}
+    .nav a{display:block; padding:8px 10px; border-radius:12px; color:var(--ink); text-decoration:none; font-size:14px}
+    .nav a:hover{background:var(--sage)}
+    .legend{margin-top:18px; display:grid; gap:8px; font-size:13px; color:var(--muted)}
+    .dot{display:inline-block; width:10px; height:10px; border-radius:999px; margin-right:6px}
+    .dot.must{background:var(--forest)} .dot.suggest{background:var(--amber)} .dot.defer{background:#8ba7a8} .dot.owned{background:#777} .dot.no{background:var(--danger)}
+    section.card{
+      background:rgba(255,250,240,.92);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:24px;
+      margin-bottom:20px;
+      box-shadow:0 8px 28px rgba(40,75,59,.07);
+    }
+    .section-title{display:flex; align-items:end; justify-content:space-between; gap:14px; margin-bottom:12px}
+    h2{font-size:28px; line-height:1.15; margin:0; letter-spacing:-.02em}
+    .hint{color:var(--muted); font-size:14px}
+    .tokens{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px}
+    .token{padding:14px; background:#fff; border:1px solid var(--line); border-radius:16px}
+    .token b{display:block; color:var(--forest)}
+    .principles{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:14px}
+    .principle{background:linear-gradient(180deg,#fff,rgba(255,255,255,.45)); border:1px solid var(--line); border-radius:18px; padding:16px}
+    .principle strong{display:block; margin-bottom:6px; color:var(--forest)}
+    table{width:100%; border-collapse:separate; border-spacing:0 10px; margin-top:10px}
+    th{font-size:13px; color:var(--muted); font-weight:700; text-align:left; padding:0 12px}
+    td{background:#fff; padding:13px 12px; vertical-align:top; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+    td:first-child{border-left:1px solid var(--line); border-radius:14px 0 0 14px; width:36px}
+    td:last-child{border-right:1px solid var(--line); border-radius:0 14px 14px 0}
+    .item-name{font-weight:800; color:var(--ink)}
+    .brand{color:var(--forest); font-weight:700}
+    .badge{display:inline-flex; align-items:center; gap:6px; padding:4px 8px; border-radius:999px; font-size:12px; font-weight:700}
+    .badge.must{background:var(--sage); color:var(--forest)}
+    .badge.suggest{background:#fff1d3; color:#75500b}
+    .badge.defer{background:var(--sky); color:#36585c}
+    .badge.owned{background:#efefef; color:#555}
+    .badge.no{background:#f4ddd9; color:var(--danger)}
+    .qty{white-space:nowrap; color:var(--muted)}
+    .split{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+    .list-card{background:#fff; border:1px solid var(--line); border-radius:18px; padding:16px}
+    .list-card h3{margin:0 0 8px; color:var(--forest)}
+    .list-card ul{margin:0; padding-left:20px}
+    .sequence{counter-reset:step; display:grid; gap:9px; margin-top:10px}
+    .sequence li{list-style:none; display:flex; gap:10px; background:#fff; border:1px solid var(--line); border-radius:14px; padding:10px 12px}
+    .sequence li::before{counter-increment:step; content:counter(step); display:inline-grid; place-items:center; width:24px; height:24px; border-radius:999px; background:var(--forest); color:#fff; font-weight:800; flex:0 0 24px}
+    .footer{margin-top:24px; padding:22px; border-radius:var(--radius); background:#262820; color:#f7f2e8}
+    .footer a{color:#f4d58d}
+    .source-list{display:grid; gap:8px; margin-top:10px; font-size:14px; color:rgba(247,242,232,.88)}
+    input[type="checkbox"]{width:18px; height:18px; accent-color:var(--forest)}
+    .hidden{display:none !important}
+    @media (max-width:980px){
+      .hero-grid,.tokens,.principles{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .grid{grid-template-columns:1fr}
+      aside{position:relative; top:auto}
+      .toolbar{position:relative; grid-template-columns:1fr}
+    }
+    @media (max-width:680px){
+      .wrap{padding:16px 12px 48px}
+      .hero{padding:24px; border-radius:24px}
+      .hero-grid,.tokens,.principles,.split{grid-template-columns:1fr}
+      table,thead,tbody,tr,td,th{display:block}
+      thead{display:none}
+      tr{margin-bottom:12px; background:#fff; border:1px solid var(--line); border-radius:16px; padding:10px}
+      td{border:0 !important; border-radius:0 !important; padding:6px 4px; background:transparent}
+      td::before{content:attr(data-label); display:block; font-size:12px; color:var(--muted); font-weight:700}
+    }
+    @media print{
+      body{background:white; color:#111}
+      .toolbar,aside,.footer button{display:none !important}
+      .wrap{max-width:none; padding:0}
+      .hero,section.card,.footer{box-shadow:none; break-inside:avoid; border:1px solid #ccc}
+      .hero{background:#284b3b !important; color:white; min-height:auto}
+      a{color:#111; text-decoration:none}
+      tr{break-inside:avoid}
+      input[type="checkbox"]{appearance:none; border:1px solid #333; width:14px; height:14px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <span class="eyebrow">BMW F45 · 兩人一貓 · 露營區車宿</span>
+      <h1>車內睡覺，車外生活。<br/>露營設備採買清單</h1>
+      <p>最新版已刪除車頂系統、大型行動電源、投影機與 xBloom 出門方案。重點放在 PAMABE 車內睡眠、OWL 外帳、貓咪安全、OFFLINE × OWL × THOR 桌面收納，以及兩天一夜的輕量電力。</p>
+      <div class="hero-grid" aria-label="摘要">
+        <div class="mini-card"><strong>2 人</strong><span>176 / 160 cm，偏瘦，可接受擠一點</span></div>
+        <div class="mini-card"><strong>1 貓</strong><span>5.5kg，習慣外出籠與長時間睡籠</span></div>
+        <div class="mini-card"><strong>2D1N</strong><span>專門露營區，有廁所、洗澡、冰箱</span></div>
+        <div class="mini-card"><strong>無車頂</strong><span>地下室 190cm，車頂箱無處收納</span></div>
+      </div>
+    </header>
+
+    <div class="toolbar" aria-label="工具列">
+      <label class="searchbox" for="searchInput">🔎
+        <input id="searchInput" type="search" placeholder="搜尋裝備、品牌、備註，例如：貓籠、OWL、PAMABE、THOR…" />
+      </label>
+      <div class="btns" role="group" aria-label="篩選">
+        <button class="filter active" data-filter="all">全部</button>
+        <button class="filter" data-filter="must">必買</button>
+        <button class="filter" data-filter="suggest">建議</button>
+        <button class="filter" data-filter="defer">延後</button>
+        <button class="filter" data-filter="owned">已有</button>
+        <button class="filter" data-filter="no">不買</button>
+        <button onclick="window.print()">列印</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <aside>
+        <h2>目錄</h2>
+        <nav class="nav">
+          <a href="#premise">使用前提</a>
+          <a href="#excluded">確定不買 / 不帶</a>
+          <a href="#owned">已經有的裝備</a>
+          <a href="#sleep">車內睡眠</a>
+          <a href="#shelter">車外帳 / 客廳區</a>
+          <a href="#cat">貓咪露營系統</a>
+          <a href="#igt">IGT / THOR 桌面收納</a>
+          <a href="#chair">椅子</a>
+          <a href="#power">照明與小電力</a>
+          <a href="#kitchen">料理與飲食</a>
+          <a href="#safety">工具與安全</a>
+          <a href="#pack">裝車與搭設</a>
+        </nav>
+        <div class="legend">
+          <span><i class="dot must"></i>必買：第一批採購</span>
+          <span><i class="dot suggest"></i>建議：可同批或看預算</span>
+          <span><i class="dot defer"></i>延後：露一次後再判斷</span>
+          <span><i class="dot owned"></i>已有：不重複購買</span>
+          <span><i class="dot no"></i>不買：本版本排除</span>
+        </div>
+      </aside>
+
+      <div>
+        <section class="card" id="premise">
+          <div class="section-title"><h2>使用前提與設計原則</h2><span class="hint">v2026-05-03</span></div>
+          <div class="tokens">
+            <div class="token"><b>車型</b>BMW 2015 218d F45 Active Tourer</div>
+            <div class="token"><b>住宿</b>人睡車內；貓睡外帳內三層籠</div>
+            <div class="token"><b>營地</b>有廁所、可洗澡、有冰箱</div>
+            <div class="token"><b>料理</b>三明治、泡麵、牛排；簡單好清理</div>
+          </div>
+          <div class="principles">
+            <div class="principle"><strong>低複雜度</strong>刪除車頂、投影、大電源與 xBloom 出門，降低搬運與損壞風險。</div>
+            <div class="principle"><strong>貓咪安全優先</strong>外帳只是第一層，三層籠、旋扣、束帶、壓重才是安全核心。</div>
+            <div class="principle"><strong>台灣露營系統</strong>桌面收納以 OFFLINE、OWL CAMP、THOR 為主，搭配小車友善的模組化。</div>
+          </div>
+        </section>
+
+        <section class="card" id="excluded">
+          <div class="section-title"><h2>確定不買 / 不帶</h2><span class="hint">避免花到失控</span></div>
+          <table class="checklist"><thead><tr><th></th><th>項目</th><th>狀態</th><th>原因</th></tr></thead><tbody>
+            <tr data-status="no"><td data-label="勾選"><input type="checkbox"></td><td data-label="項目" class="item-name">車頂橫桿 / 車頂箱</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因">地下室限高 190cm，車頂箱不能常駐且無處收納；單裝橫桿目前無實際用途。</td></tr>
+            <tr data-status="no"><td><input type="checkbox"></td><td class="item-name">xBloom Studio 出門</td><td><span class="badge no">不帶</span></td><td>1200W、高價精密設備；兩天一夜不值得增加搬運與碰撞風險。</td></tr>
+            <tr data-status="no"><td><input type="checkbox"></td><td class="item-name">Jackery / EcoFlow 大型行動電源</td><td><span class="badge no">不買</span></td><td>刪除 xBloom 與投影後，用電需求大幅下降。</td></tr>
+            <tr data-status="no"><td><input type="checkbox"></td><td class="item-name">投影機</td><td><span class="badge no">不買</span></td><td>MacBook + 筆電級 PD 行動電源已足夠 2 天 1 夜。</td></tr>
+            <tr data-status="no"><td><input type="checkbox"></td><td class="item-name">車載冰箱 / 行動馬桶 / 洗澡帳</td><td><span class="badge no">不買</span></td><td>會選有冰箱、廁所、洗澡設備的露營區。</td></tr>
+          </tbody></table>
+        </section>
+
+        <section class="card" id="owned">
+          <div class="section-title"><h2>已經有的裝備</h2><span class="hint">不重複購買</span></div>
+          <table class="checklist"><thead><tr><th></th><th>類別</th><th>物品</th><th>備註</th></tr></thead><tbody>
+            <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name">保冷</td><td><span class="brand">Coleman 35L 終極保冷袋 ×2</span></td><td>一袋放肉品/需冷藏，一袋放飲料/水果/冰磚。</td></tr>
+            <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name">保冷</td><td><span class="brand">CAPTAIN STAG 250g 冰磚多組</span></td><td>搭配營區冰箱輪替。</td></tr>
+            <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name">料理</td><td>爐具、鍋具</td><td>確認是否有平底鍋與煎牛排用夾子。</td></tr>
+            <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name">貓咪</td><td>外出籠、胸背帶</td><td>行車用外出籠；胸背帶繼續訓練。</td></tr>
+            <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name">電子</td><td>MacBook、xBloom Studio</td><td>xBloom 留家用；露營只帶 MacBook。</td></tr>
+          </tbody></table>
+        </section>
+
+        <section class="card" id="sleep">
+          <div class="section-title"><h2>A. 車內睡眠系統</h2><span class="hint">車內只負責睡覺</span></div>
+          <table class="checklist"><thead><tr><th></th><th>項目</th><th>品牌 / 型號</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">車內平整化</td><td><a class="brand" href="https://www.oceanbaby.com.tw/products/%E8%BB%8A%E6%B3%8A%E7%A9%BA%E9%96%93%E5%B9%B3%E6%95%B4%E5%8C%96%E7%B5%84%E5%90%88-%E9%9B%99%E5%BA%A7b%E6%AC%BE" target="_blank" rel="noreferrer">PAMABE 雙座 B 款</a></td><td class="qty">1 組</td><td><span class="badge must">必買</span></td><td>快速補平，不做重木工。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">車宿床墊</td><td><a class="brand" href="https://www.oceanbaby.com.tw/products/mattress-public-double?variant_id=69b139ed35fa3c0010400b18" target="_blank" rel="noreferrer">PAMABE 180×100×5cm</a></td><td>1 張</td><td><span class="badge must">必買</span></td><td>F45 兩人睡最合理尺寸，先不買 110cm 以上。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">防滑墊</td><td>可裁式止滑墊</td><td>1–2 片</td><td><span class="badge must">必買</span></td><td>放床板/床墊下方，減少滑動與異音。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">防水壓縮袋</td><td>20L / 30L 混搭</td><td>4–6 個</td><td><span class="badge must">必買</span></td><td>收棉被、枕頭、衣物。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">遮光與防蚊</td><td>F45 遮光簾 + 車窗防蚊網</td><td>1 車份</td><td><span class="badge must">必買</span></td><td>車內睡覺隱私、通風、防蚊。</td></tr>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">USB 風扇 / 除濕包</td><td>夾式或吊掛式風扇、一般除濕包</td><td>1–2 台 / 2–4 包</td><td><span class="badge suggest">建議</span></td><td>車內睡覺與貓帳都可用。</td></tr>
+          </tbody></table>
+        </section>
+
+        <section class="card" id="shelter">
+          <div class="section-title"><h2>B. 車外帳 / 客廳區</h2><span class="hint">人活動 + 貓籠外層保護</span></div>
+          <table class="checklist"><thead><tr><th></th><th>項目</th><th>品牌 / 型號</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">車邊帳 / 客廳帳</td><td><a class="brand" href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank" rel="noreferrer">OWL CAMP VanShelter TC ST-19FA</a></td><td>1 頂</td><td><span class="badge must">必買</span></td><td>車外活動區與貓籠外層保護。</td></tr>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">TPU 門</td><td>VanShelter 專用 TPU 門</td><td>1 片</td><td><span class="badge suggest">建議</span></td><td>擋風、雨天、低溫更好用。</td></tr>
+            <tr data-status="no"><td><input type="checkbox"></td><td class="item-name">車尾連接布</td><td>OWL 車尾連接布</td><td>0</td><td><span class="badge no">先不買</span></td><td>目前以車側使用為主。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">地布 / EVA 地墊</td><td>2.7×2.7m 地布 + EVA 墊</td><td>各 1</td><td><span class="badge must">必買</span></td><td>外帳地面、貓籠下方防潮、防滑。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">營釘 / 營繩 / 營槌</td><td>20–30cm 鍛造釘、反光營繩、營槌</td><td>1 組</td><td><span class="badge must">必買</span></td><td>山上抗風與搭帳必備。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">水袋 / 沙袋壓重</td><td>5–10kg 級</td><td>4 個</td><td><span class="badge must">必買</span></td><td>不能打釘或加強貓籠固定時使用。</td></tr>
+          </tbody></table>
+        </section>
+
+        <section class="card" id="cat">
+          <div class="section-title"><h2>C. 貓咪露營系統</h2><span class="hint">雙層保護：外帳 + 三層籠</span></div>
+          <table class="checklist"><thead><tr><th></th><th>項目</th><th>品牌 / 型號</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">三層折疊貓籠</td><td><a class="brand" href="https://www.momoshop.com.tw/TP/TP0004703/goodsDetail/TP00047030000482" target="_blank" rel="noreferrer">momo 免安裝折疊三層貓籠</a></td><td>1 個</td><td><span class="badge must">必買</span></td><td>貓晚上睡籠內；下單前確認三層款與折疊後尺寸。</td></tr>
+            <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name">行車外出籠 / 胸背帶</td><td>已購買</td><td>各 1</td><td><span class="badge owned">已有</span></td><td>行車時使用外出籠；胸背帶繼續訓練。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">固定束帶</td><td>25mm 壓扣束帶</td><td>4–6 條</td><td><span class="badge must">必買</span></td><td>固定貓籠主框架，不綁細鐵網。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">旋鎖登山扣</td><td>小型旋鎖扣</td><td>4–6 個</td><td><span class="badge must">必買</span></td><td>貓籠門扣二次防逃。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">貓砂 / 水碗 / 食碗</td><td>熟悉砂種、低重心碗</td><td>1 組</td><td><span class="badge must">必買</span></td><td>先不用電子飲水與電子出糧。</td></tr>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">溫濕度計 / 貓急救包</td><td>米家或類似款；基本急救用品</td><td>各 1</td><td><span class="badge suggest">建議</span></td><td>監測貓帳溫度與緊急處理。</td></tr>
+          </tbody></table>
+        </section>
+
+        <section class="card" id="igt">
+          <div class="section-title"><h2>D. 桌面 / IGT / THOR 收納</h2><span class="hint">台灣車露模組系統</span></div>
+          <table class="checklist"><thead><tr><th></th><th>項目</th><th>品牌 / 型號</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">主桌</td><td><a class="brand" href="https://www.offlineoutdoor.com/products/tbsdark" target="_blank" rel="noreferrer">OFFLINE 離線桌組</a></td><td>1 組</td><td><span class="badge must">必買</span></td><td>小車友善、IGT 系統、可擴充。</td></tr>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">IGT 滑軌</td><td>OFFLINE × OWL CAMP 一單位雙向滑軌</td><td>1 個</td><td><span class="badge suggest">建議</span></td><td>放餐具、咖啡小物、調味料。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">瀝水網袋</td><td><a class="brand" href="https://www.owlcamptw.com/zh-TW/products/dbd-igtn" target="_blank" rel="noreferrer">OWL CAMP 自立式一單位瀝水網袋</a></td><td>1 個</td><td><span class="badge must">必買</span></td><td>餐具洗完瀝水，也可提去營區水槽。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">收納箱</td><td>THOR 22L + THOR 53L</td><td>各 1</td><td><span class="badge must">必買</span></td><td>22L 放線材小物；53L 放餐具料理周邊。</td></tr>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">THOR 底座</td><td>OFFLINE 22L THOR 箱底座</td><td>1 個</td><td><span class="badge suggest">建議</span></td><td>讓 22L THOR 變成桌邊模組。</td></tr>
+            <tr data-status="defer"><td><input type="checkbox"></td><td class="item-name">跨接鐵板 / 小物袋</td><td>OFFLINE THOR 跨接鐵板、IGT 側掛袋</td><td>各 1</td><td><span class="badge defer">延後</span></td><td>露一次後覺得桌面不足再買。</td></tr>
+          </tbody></table>
+        </section>
+
+        <section class="card" id="chair">
+          <div class="section-title"><h2>E. 椅子</h2><span class="hint">舒適 vs 收納</span></div>
+          <table class="checklist"><thead><tr><th></th><th>項目</th><th>品牌 / 型號</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">方案 A：低坐姿椅</td><td>Coleman 達人帆布低坐姿休閒椅</td><td>2 張</td><td><span class="badge suggest">二選一</span></td><td>較好收、較搭低桌。</td></tr>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">方案 B：高背椅</td><td>Coleman 舒適達人帆布高背椅</td><td>2 張</td><td><span class="badge suggest">二選一</span></td><td>久坐較舒服，但較佔空間。</td></tr>
+            <tr data-status="defer"><td><input type="checkbox"></td><td class="item-name">小邊桌</td><td>小型折疊邊桌</td><td>1 張</td><td><span class="badge defer">延後</span></td><td>主桌不夠再補。</td></tr>
+          </tbody></table>
+        </section>
+
+        <section class="card" id="power">
+          <div class="section-title"><h2>F. 照明與小電力</h2><span class="hint">MacBook + PD 行動電源</span></div>
+          <table class="checklist"><thead><tr><th></th><th>項目</th><th>品牌 / 型號</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">主燈</td><td><a class="brand" href="https://www.claymore.com.tw/product/CLAYMORE_ULTRA_3.0_L_%E9%9C%B2%E7%87%9F%E7%87%88" target="_blank" rel="noreferrer">CLAYMORE ULTRA 3.0 M 或 L</a></td><td>1 盞</td><td><span class="badge must">必買</span></td><td>車外帳主照明。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">頭燈</td><td>USB 充電式頭燈</td><td>2 個</td><td><span class="badge must">必買</span></td><td>晚上上廁所、整理貓、找東西。</td></tr>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">小燈</td><td>貓籠小燈、車內小燈</td><td>各 1</td><td><span class="badge suggest">建議</span></td><td>低亮度，不要直射貓。</td></tr>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">USB-C PD 行動電源</td><td>100W 或 140W 筆電級</td><td>1 顆</td><td><span class="badge suggest">視現有狀況</span></td><td>給 MacBook / 手機備援。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">USB-C 線</td><td>100W / 140W 線</td><td>2–3 條</td><td><span class="badge must">必買</span></td><td>MacBook / 行動電源使用。</td></tr>
+            <tr data-status="defer"><td><input type="checkbox"></td><td class="item-name">多孔充電器 / 小延長線</td><td>GaN 65W/100W；一般戶外延長線</td><td>各 1</td><td><span class="badge defer">延後</span></td><td>沒有大電器後不是第一必買。</td></tr>
+          </tbody></table>
+        </section>
+
+        <section class="card" id="kitchen">
+          <div class="section-title"><h2>G. 料理與飲食周邊</h2><span class="hint">簡單料理，不做大廚房</span></div>
+          <table class="checklist"><thead><tr><th></th><th>項目</th><th>品牌 / 型號</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
+            <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name">爐具 / 鍋具 / 保冷袋 / 冰磚</td><td>已購買</td><td>1 組</td><td><span class="badge owned">已有</span></td><td>確認是否有平底鍋與牛排夾。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">小砧板</td><td>生熟分開</td><td>2 片</td><td><span class="badge must">必買</span></td><td>牛排與三明治分開處理。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">食材盒 / 調味料盒</td><td>LocknLock / IKEA / Daiso 等</td><td>1 組</td><td><span class="badge must">必買</span></td><td>食材分類，鹽、胡椒、油、醬料。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">夾子 / 鍋鏟</td><td>不鏽鋼夾、矽膠鏟</td><td>各 1</td><td><span class="badge must">必買</span></td><td>煎牛排用。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">清潔耗材</td><td>廚房紙巾、濕紙巾、垃圾袋、洗碗精、海綿</td><td>1 組</td><td><span class="badge must">必買</span></td><td>食物垃圾要密封。</td></tr>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">折疊洗碗盆 / 保冷袋溫度計</td><td>矽膠盆、小型溫度計</td><td>各 1</td><td><span class="badge suggest">建議</span></td><td>洗碗與肉品保冷更安心。</td></tr>
+          </tbody></table>
+        </section>
+
+        <section class="card" id="safety">
+          <div class="section-title"><h2>H. 工具、安全與雜項</h2><span class="hint">露營現場最常救命的小物</span></div>
+          <table class="checklist"><thead><tr><th></th><th>項目</th><th>品牌 / 型號</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">小工具包</td><td>鉗子、螺絲起子、剪刀、美工刀</td><td>1 包</td><td><span class="badge must">必買</span></td><td>修裝備、剪束帶。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">束線帶 / 防水膠帶</td><td>大小混搭、布膠帶</td><td>1 組</td><td><span class="badge must">必買</span></td><td>臨時固定、帳篷補強。</td></tr>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">CO 警報器 / 滅火毯</td><td>電池式、一氧化碳警報器；露營小型滅火毯</td><td>各 1</td><td><span class="badge suggest">建議</span></td><td>有瓦斯爐就建議帶。</td></tr>
+            <tr data-status="must"><td><input type="checkbox"></td><td class="item-name">醫藥包 / 雨衣 / 拖鞋</td><td>人用醫藥包、兩人份雨衣與拖鞋</td><td>1 組</td><td><span class="badge must">必買</span></td><td>山上天氣變化快，營地夜間走動方便。</td></tr>
+            <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name">小掃把 / 抹布 / 防蚊液</td><td>清潔組</td><td>1 組</td><td><span class="badge suggest">建議</span></td><td>清貓砂、車內沙土、桌面油污。</td></tr>
+            <tr data-status="defer"><td><input type="checkbox"></td><td class="item-name">折疊推車</td><td>大輪露營推車</td><td>1 台</td><td><span class="badge defer">延後</span></td><td>常去車不能到營位的營地再買。</td></tr>
+          </tbody></table>
+        </section>
+
+        <section class="card" id="pack">
+          <div class="section-title"><h2>裝車與搭設流程</h2><span class="hint">給現場檢查用</span></div>
+          <div class="split">
+            <div class="list-card"><h3>車內保留</h3><ul><li>MacBook、PD 行動電源、手機、貴重物</li><li>貓行車外出籠</li><li>保冷袋、料理箱、THOR 22L/53L</li><li>燈具、工具包、醫藥包</li></ul></div>
+            <div class="list-card"><h3>後廂 / 倒椅區</h3><ul><li>PAMABE 平整化與床墊</li><li>棉被、枕頭、防水壓縮袋</li><li>OWL VanShelter TC、地布、EVA 墊</li><li>折疊三層貓籠、桌椅</li></ul></div>
+          </div>
+          <h3>到營地搭設順序</h3>
+          <ol class="sequence">
+            <li>停車，確認風向與車側空間。</li>
+            <li>搭 OWL VanShelter TC，下營釘、拉營繩，必要時加壓重。</li>
+            <li>鋪地布與 EVA 墊，展開三層貓籠並固定主框架。</li>
+            <li>貓籠門扣加旋鎖登山扣；貓先進外出籠或三層籠。</li>
+            <li>架 OFFLINE 離線桌、OWL 瀝水袋、THOR 收納。</li>
+            <li>擺 Coleman 椅子與 CLAYMORE 主燈。</li>
+            <li>車內鋪 PAMABE 平整化與床墊。</li>
+            <li>晚上人睡車內，貓睡外帳三層籠；強風、雨、冷熱或有動物靠近時，貓回車內。</li>
+          </ol>
+        </section>
+
+        <footer class="footer">
+          <h2>設計參考與引用</h2>
+          <p>此頁面採用「結構化卡片 + checklist + design-token」的方式：內容結構參考 GPT-Image-2 prompt library 的 Prompt-as-Code / UI mockup 思路；頁面設計方向參考 open-design 的 local-first、design systems、HTML export 概念。所有產品連結僅供採購與討論參考，實際價格/庫存以店家頁面為準。</p>
+          <div class="source-list">
+            <a href="https://github.com/freestylefly/awesome-gpt-image-2" target="_blank" rel="noreferrer">GitHub：freestylefly/awesome-gpt-image-2</a>
+            <a href="https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts" target="_blank" rel="noreferrer">GitHub：EvoLinkAI/awesome-gpt-image-2-prompts</a>
+            <a href="https://github.com/nexu-io/open-design/tree/main" target="_blank" rel="noreferrer">GitHub：nexu-io/open-design</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </main>
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const rows = [...document.querySelectorAll('tr[data-status]')];
+    const buttons = [...document.querySelectorAll('.filter')];
+    let activeFilter = 'all';
+
+    function applyFilters(){
+      const q = searchInput.value.trim().toLowerCase();
+      rows.forEach(row => {
+        const status = row.dataset.status;
+        const text = row.innerText.toLowerCase();
+        const statusMatch = activeFilter === 'all' || status === activeFilter;
+        const searchMatch = !q || text.includes(q);
+        row.classList.toggle('hidden', !(statusMatch && searchMatch));
+      });
+    }
+
+    buttons.forEach(btn => btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      applyFilters();
+    }));
+    searchInput.addEventListener('input', applyFilters);
+
+    const CHECK_KEY = 'f45-camping-checklist-v1';
+    const checks = [...document.querySelectorAll('input[type="checkbox"]')];
+    const saved = JSON.parse(localStorage.getItem(CHECK_KEY) || '{}');
+    checks.forEach((box, idx) => {
+      box.checked = !!saved[idx];
+      box.addEventListener('change', () => {
+        saved[idx] = box.checked;
+        localStorage.setItem(CHECK_KEY, JSON.stringify(saved));
+      });
+    });
+  </script>
+</body>
+</html>
