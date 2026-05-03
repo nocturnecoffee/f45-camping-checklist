@@ -55,6 +55,27 @@
     @media(max-width:980px){.hero-grid,.tokens{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}aside{position:relative; top:auto}.toolbar{position:relative; grid-template-columns:1fr}}
     @media(max-width:680px){.wrap{padding:16px 12px 48px}.hero{padding:24px; border-radius:24px}.hero-grid,.tokens,.split{grid-template-columns:1fr}table,thead,tbody,tr,td,th{display:block}thead{display:none}tr{margin-bottom:12px; background:#fff; border:1px solid var(--line); border-radius:16px; padding:10px}td{border:0!important; border-radius:0!important; padding:6px 4px; background:transparent}td:before{content:attr(data-label); display:block; font-size:12px; color:var(--muted); font-weight:800}.section-title{display:block}}
     @media print{body{background:white}.toolbar,aside{display:none!important}.wrap{max-width:none; padding:0}.hero,section.card,.footer{box-shadow:none; break-inside:avoid; border:1px solid #ccc}.hero{background:#284b3b!important; color:white; min-height:auto}tr{break-inside:avoid}input[type="checkbox"]{appearance:none; border:1px solid #333; width:14px; height:14px}}
+    .shop-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:14px; margin:18px 0 12px}
+    .shop-card{background:#fffaf0; border:1px solid var(--line); border-radius:18px; padding:18px; display:flex; flex-direction:column}
+    .shop-card.priority{border:2px solid var(--forest); box-shadow:0 6px 18px rgba(40,75,59,.08)}
+    .shop-card-head{display:flex; align-items:baseline; justify-content:space-between; gap:10px; margin-bottom:12px; padding-bottom:10px; border-bottom:1px dashed var(--line)}
+    .shop-card-head h3{margin:0; font-size:17px; color:var(--forest); letter-spacing:-.01em}
+    .shop-card-head h3 a{color:inherit; text-decoration:none}
+    .shop-card-head h3 a:hover{text-decoration:underline}
+    .shop-total{font-size:18px; font-weight:800; color:var(--forest); white-space:nowrap; font-variant-numeric:tabular-nums}
+    .shop-card ul{list-style:none; padding:0; margin:0; flex:1}
+    .shop-card li{display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:8px 0; border-bottom:1px dashed rgba(223,211,189,.6); font-size:14px; line-height:1.5}
+    .shop-card li:last-child{border-bottom:0}
+    .shop-card li .price{color:var(--muted); white-space:nowrap; font-variant-numeric:tabular-nums; font-weight:700}
+    .shop-card li a{color:var(--ink); text-decoration:none; border-bottom:1px solid transparent}
+    .shop-card li a:hover{border-bottom-color:var(--forest); color:var(--forest)}
+    .shop-card .shop-note{font-size:12px; color:var(--muted); margin-top:10px; padding-top:8px; border-top:1px dashed var(--line)}
+    .budget-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:8px; margin:14px 0 4px}
+    .budget-cell{background:#fffaf0; border:1px solid var(--line); border-radius:12px; padding:10px 12px; text-align:center}
+    .budget-cell .b-label{font-size:12px; color:var(--muted); display:block}
+    .budget-cell .b-value{font-size:16px; font-weight:800; color:var(--forest); font-variant-numeric:tabular-nums}
+    .budget-cell.total{background:var(--forest); border-color:var(--forest)}
+    .budget-cell.total .b-label, .budget-cell.total .b-value{color:#fffaf0}
   </style>
 </head>
 <body>
@@ -94,7 +115,18 @@
     <div class="token"><b>車輛</b>BMW 2015 218d F45 Active Tourer</div><div class="token"><b>人數</b>2 人，176 / 160 cm，偏瘦</div><div class="token"><b>貓咪</b>1 隻，約 5.5kg，習慣外出籠與睡籠</div><div class="token"><b>營地</b>專門露營區，有廁所、洗澡、冰箱</div><div class="token"><b>天數</b>主要 2 天 1 夜，偶爾 3 天 2 夜</div><div class="token"><b>飲食</b>三明治、泡麵、牛排，簡單料理</div><div class="token"><b>電力</b>MacBook + PD 行動電源 + 營地市電</div><div class="token"><b>核心</b>車內睡覺，車外生活，貓在外帳三層籠</div>
   </div>
   <div class="notice"><strong>床墊最新決策：</strong>舒適優先，選 EXPED MegaMat Duo 10 M。F45 最窄寬度略小於 MegaMat 104cm，接受邊緣稍微翹起；實際裝車時仍建議先用床板/紙板模擬 183×104cm。</div>
-  <div class="notice"><strong>全清單預算估算（2026/05 查價）：</strong>A 睡眠 24,500 + B 車外帳 23,600 + C 貓咪 4,200 + D 桌面 8,600 + E 椅子 5,960 + F 照明電力 14,650 + G 料理 1,400 + H 安全 4,300 = <b>合計約 NT$ 87,200</b>（不含延後品 THOR 75L/底座/跨接鐵板）。實際區間 NT$ 80,000–95,000。下單前用 <a href="https://biggo.com.tw/" target="_blank">BigGo</a> / <a href="https://feebee.com.tw/" target="_blank">飛比</a> 再 cross-check；露營檔期（5–10 月）momo 常有 7 折券、PChome P 幣回饋。<b>分平台採購整理請見頁尾「按平台採購」段落。</b></div>
+  <div class="notice"><strong>全清單預算估算（2026/05 查價）：</strong>合計約 <b>NT$ 87,200</b>，實際區間 NT$ 80,000–95,000（不含延後品 THOR 75L/底座/跨接鐵板）。<b>分平台採購整理請見頁尾「按平台採購」段落。</b></div>
+  <div class="budget-grid">
+    <div class="budget-cell"><span class="b-label">A 睡眠</span><span class="b-value">$24,500</span></div>
+    <div class="budget-cell"><span class="b-label">B 車外帳</span><span class="b-value">$23,600</span></div>
+    <div class="budget-cell"><span class="b-label">C 貓咪</span><span class="b-value">$4,200</span></div>
+    <div class="budget-cell"><span class="b-label">D 桌面</span><span class="b-value">$8,600</span></div>
+    <div class="budget-cell"><span class="b-label">E 椅子</span><span class="b-value">$5,960</span></div>
+    <div class="budget-cell"><span class="b-label">F 照明電力</span><span class="b-value">$14,650</span></div>
+    <div class="budget-cell"><span class="b-label">G 料理</span><span class="b-value">$1,400</span></div>
+    <div class="budget-cell"><span class="b-label">H 安全</span><span class="b-value">$4,300</span></div>
+    <div class="budget-cell total"><span class="b-label">合計</span><span class="b-value">$87,200</span></div>
+  </div>
 </section>
 
 <section id="no-buy" class="card">
@@ -207,101 +239,159 @@
 
 <section id="shopping" class="card">
   <div class="section-title"><h2>按平台採購整理</h2><span class="hint">一次下單最省運費 · <b>合計約 NT$ 87,200</b></span></div>
-  <div class="notice"><strong>採購順序建議：</strong>① 先買 OWL CAMP 主帳組（VanShelter + TPU 門 + 滑軌 + 瀝水袋）併單省運費 → ② OFFLINE 主桌 → ③ EXPED 睡眠系統（樂天/OAI 任一）→ ④ momo 一次掃高背椅、Anker、CARGO、貓籠等 → ⑤ PChome / 蝦皮補小物 → ⑥ 大創、迪卡儂門市現場挑。</div>
-  <table><thead><tr><th></th><th>平台 / 通路</th><th>採購品項</th><th>小計</th></tr></thead><tbody>
+  <div class="notice"><strong>採購順序建議：</strong>① OWL CAMP 主帳組（VanShelter + TPU 門 + 滑軌 + 瀝水袋）併單省運費 → ② OFFLINE 主桌 → ③ EXPED 睡眠系統（樂天/OAI 任一）→ ④ momo 一次掃高背椅、Anker、CARGO、貓籠等 → ⑤ PChome / 蝦皮補小物 → ⑥ 大創、迪卡儂門市現場挑。</div>
 
-    <tr data-status="must"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">OWL CAMP 官方</a></b></td><td data-label="品項">
-      <a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">VanShelter TC ST-19FA</a> $17,860 ·
-      <a href="https://www.owlcamptw.com/zh-TW/collections/%E5%B8%B3%E7%AF%B7%E9%85%8D%E4%BB%B6" target="_blank">TPU 門</a> $1,780 ·
-      <a href="https://www.owlcamptw.com/zh-TW/products/dbd-igtn" target="_blank">DBD-IGTN 瀝水網袋</a> $930 ·
-      <a href="https://www.owlcamptw.com/zh-TW/products/ofwl-igt" target="_blank">OFFLINE×OWL 雙向滑軌</a> $1,980
-    </td><td data-label="小計"><b>NT$ 22,550</b></td></tr>
+  <div class="shop-grid">
 
-    <tr data-status="must"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://www.offlineoutdoor.com/products/tbsdark" target="_blank">OFFLINE 官方</a></b></td><td data-label="品項">
-      <a href="https://www.offlineoutdoor.com/products/tbsdark" target="_blank">離線桌組 TBSDARK</a> $3,480
-    </td><td data-label="小計"><b>NT$ 3,480</b></td></tr>
+    <div class="shop-card priority">
+      <div class="shop-card-head"><h3><a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">① OWL CAMP 官方</a></h3><span class="shop-total">NT$ 22,550</span></div>
+      <ul>
+        <li><a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">VanShelter TC ST-19FA</a><span class="price">$17,860</span></li>
+        <li><a href="https://www.owlcamptw.com/zh-TW/collections/%E5%B8%B3%E7%AF%B7%E9%85%8D%E4%BB%B6" target="_blank">VanShelter 專用 TPU 門</a><span class="price">$1,780</span></li>
+        <li><a href="https://www.owlcamptw.com/zh-TW/products/dbd-igtn" target="_blank">DBD-IGTN 瀝水網袋</a><span class="price">$930</span></li>
+        <li><a href="https://www.owlcamptw.com/zh-TW/products/ofwl-igt" target="_blank">OFFLINE × OWL 雙向滑軌</a><span class="price">$1,980</span></li>
+      </ul>
+      <div class="shop-note">滿 NT$ 2,000 通常免運，建議全部併單。</div>
+    </div>
 
-    <tr data-status="must"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://www.oceanbaby.com.tw/categories/car-mattress" target="_blank">PAMABE / Oceanbaby 官方</a></b></td><td data-label="品項">
-      <a href="https://www.oceanbaby.com.tw/products/%E8%BB%8A%E6%B3%8A%E7%A9%BA%E9%96%93%E5%B9%B3%E6%95%B4%E5%8C%96%E7%B5%84%E5%90%88-%E9%9B%99%E5%BA%A7b%E6%AC%BE" target="_blank">車泊平整化雙座 B 款</a> $1,580
-    </td><td data-label="小計"><b>NT$ 1,580</b></td></tr>
+    <div class="shop-card priority">
+      <div class="shop-card-head"><h3><a href="https://www.momoshop.com.tw/" target="_blank">② momo 購物網</a></h3><span class="shop-total">NT$ 21,663</span></div>
+      <ul>
+        <li><a href="https://m.momoshop.com.tw/goods.momo?i_code=11023240" target="_blank">OWL 高背椅頭枕加大版 ×2</a><span class="price">$5,960</span></li>
+        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13213987" target="_blank">Anker 737 PowerCore 140W</a><span class="price">$4,690</span></li>
+        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11044401" target="_blank">Goal Zero 32005 ×3</a><span class="price">$3,540</span></li>
+        <li><a href="https://www.momoshop.com.tw/TP/TP0004703/goodsDetail/TP00047030000482" target="_blank">三層折疊貓籠</a><span class="price">~$1,800</span></li>
+        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13827772" target="_blank">FLEXTAIL Tiny Pump 2X 套組</a><span class="price">$1,590</span></li>
+        <li>CARGO 一氧化碳偵測器<span class="price">$1,480</span></li>
+        <li><a href="https://www.momoshop.com.tw/TP/TP0001070/goodsDetail/TP00010700001001" target="_blank">THOR 22L 收納箱</a><span class="price">$680</span></li>
+        <li>兩件式雨衣<span class="price">$590</span></li>
+        <li><a href="https://m.momoshop.com.tw/goods.momo?i_code=4668035" target="_blank">貓壹折疊矽膠貓砂盆</a><span class="price">$399</span></li>
+        <li><a href="https://www.momoshop.com.tw/TP/TP0003353/goodsDetail/TP00033530000180" target="_blank">30cm 鍛造釘×4</a><span class="price">$390</span></li>
+        <li><a href="https://www.momoshop.com.tw/TP/TP0003353/goodsDetail/TP00033530000184" target="_blank">15cm 鍛造釘×8</a><span class="price">$345</span></li>
+        <li><a href="https://www.momoshop.com.tw/TP/TP0004023/goodsDetail/TP00040230000027" target="_blank">居享小舖醫療收納包</a><span class="price">$199</span></li>
+      </ul>
+      <div class="shop-note">信用卡單筆滿 $3,000 + Mo 幣回饋最高約 7%。</div>
+    </div>
 
-    <tr data-status="must"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://www.rakuten.com.tw/shop/mountainfun/" target="_blank">樂天登山樂 / OAI</a></b></td><td data-label="品項">
-      <a href="https://www.rakuten.com.tw/shop/mountainfun/product/exped-99339/" target="_blank">EXPED MegaMat Duo 10 M</a> ~$15,000 ·
-      <a href="https://shop.oai.com.tw/collections/exped" target="_blank">EXPED Widget Pump</a> ~$2,600
-    </td><td data-label="小計"><b>NT$ 17,600</b></td></tr>
+    <div class="shop-card priority">
+      <div class="shop-card-head"><h3><a href="https://www.rakuten.com.tw/shop/mountainfun/" target="_blank">③ 樂天登山樂 / OAI</a></h3><span class="shop-total">NT$ 17,600</span></div>
+      <ul>
+        <li><a href="https://www.rakuten.com.tw/shop/mountainfun/product/exped-99339/" target="_blank">EXPED MegaMat Duo 10 M</a><span class="price">~$15,000</span></li>
+        <li><a href="https://shop.oai.com.tw/collections/exped" target="_blank">EXPED Widget Pump</a><span class="price">~$2,600</span></li>
+      </ul>
+      <div class="shop-note">EXPED 台灣總代理是 OAI；樂天會員點數最划算。</div>
+    </div>
 
-    <tr data-status="must"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://www.momoshop.com.tw/" target="_blank">momo 購物網</a></b></td><td data-label="品項">
-      <a href="https://m.momoshop.com.tw/goods.momo?i_code=11023240" target="_blank">OWL 高背椅頭枕加大版 ×2</a> $5,960 ·
-      <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11044401" target="_blank">Goal Zero 32005 ×3</a> $3,540 ·
-      <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13213987" target="_blank">Anker 737 PowerCore 140W</a> $4,690 ·
-      <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13827772" target="_blank">FLEXTAIL Tiny Pump 2X 套組</a> $1,590 ·
-      <a href="https://www.momoshop.com.tw/TP/TP0004703/goodsDetail/TP00047030000482" target="_blank">三層折疊貓籠</a> ~$1,800 ·
-      <a href="https://m.momoshop.com.tw/goods.momo?i_code=4668035" target="_blank">貓壹折疊矽膠貓砂盆</a> $399 ·
-      <a href="https://www.momoshop.com.tw/TP/TP0001070/goodsDetail/TP00010700001001" target="_blank">THOR 22L</a> $680 ·
-      <a href="https://www.momoshop.com.tw/TP/TP0003353/goodsDetail/TP00033530000184" target="_blank">15cm 鍛造釘×8</a> $345 ·
-      <a href="https://www.momoshop.com.tw/TP/TP0003353/goodsDetail/TP00033530000180" target="_blank">30cm 鍛造釘×4</a> $390 ·
-      CARGO CO 偵測器 $1,480 ·
-      <a href="https://www.momoshop.com.tw/TP/TP0004023/goodsDetail/TP00040230000027" target="_blank">居享小舖醫療收納包</a> $199 ·
-      兩件式雨衣 $590
-    </td><td data-label="小計"><b>NT$ 21,663</b></td></tr>
+    <div class="shop-card">
+      <div class="shop-card-head"><h3><a href="https://24h.pchome.com.tw/" target="_blank">④ PChome 24h</a></h3><span class="shop-total">NT$ 6,267</span></div>
+      <ul>
+        <li><a href="https://24h.pchome.com.tw/prod/DEBQOU-A900HPGMG" target="_blank">CLAYMORE V1040 風扇</a><span class="price">$2,880</span></li>
+        <li><a href="https://24h.pchome.com.tw/prod/DEBQOU-A900BPUJF" target="_blank">ADAM 戶外動力線 10M</a><span class="price">$1,380</span></li>
+        <li><a href="https://24h.pchome.com.tw/prod/DCACYK-A900AX5B6" target="_blank">UGREEN 240W PD3.1 線</a><span class="price">$590</span></li>
+        <li>UGREEN 100W 編織線<span class="price">$370</span></li>
+        <li>PP 保鮮盒 4 件套<span class="price">$300</span></li>
+        <li><a href="https://24h.pchome.com.tw/prod/DAAJ5N-A900FCAM4" target="_blank">174T 派卡瑞丁防蚊液</a><span class="price">$280</span></li>
+        <li>ALSTRONG 滅火毯 1×1m<span class="price">$249</span></li>
+        <li>春風廚房紙巾<span class="price">$129</span></li>
+        <li><a href="https://24h.pchome.com.tw/prod/DAAC09-A82653136" target="_blank">台塑 45L 垃圾袋</a><span class="price">$89</span></li>
+      </ul>
+      <div class="shop-note">P 幣會員回饋約 1–3%；24 小時到貨方便補件。</div>
+    </div>
 
-    <tr data-status="must"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://24h.pchome.com.tw/" target="_blank">PChome 24h</a></b></td><td data-label="品項">
-      <a href="https://24h.pchome.com.tw/prod/DEBQOU-A900HPGMG" target="_blank">CLAYMORE V1040</a> $2,880 ·
-      <a href="https://24h.pchome.com.tw/prod/DEBQOU-A900BPUJF" target="_blank">ADAM 戶外動力線 10M</a> $1,380 ·
-      UGREEN 100W 編織線 $370 ·
-      <a href="https://24h.pchome.com.tw/prod/DCACYK-A900AX5B6" target="_blank">UGREEN 240W PD3.1 線</a> $590 ·
-      PP 保鮮盒 4 件套 $300 ·
-      春風廚房紙巾 $129 ·
-      <a href="https://24h.pchome.com.tw/prod/DAAC09-A82653136" target="_blank">台塑 45L 垃圾袋</a> $89 ·
-      <a href="https://24h.pchome.com.tw/prod/DAAJ5N-A900FCAM4" target="_blank">174T 派卡瑞丁 20% 防蚊液</a> $280 ·
-      ALSTRONG 滅火毯 $249
-    </td><td data-label="小計"><b>NT$ 6,267</b></td></tr>
+    <div class="shop-card">
+      <div class="shop-card-head"><h3><a href="https://unclebenny.com.tw/" target="_blank">⑤ 露營專賣店（多家）</a></h3><span class="shop-total">NT$ 5,435</span></div>
+      <ul>
+        <li><a href="https://unclebenny.com.tw/products/thor-box" target="_blank">THOR 53L 收納箱</a><span class="price">~$1,530</span></li>
+        <li><a href="https://www.naturehiketw.com/collections/waterproof-bag" target="_blank">Naturehike 防水袋 20L+30L</a><span class="price">$1,000</span></li>
+        <li><a href="https://qmat.com.tw/products/%E5%B7%A7%E6%8B%BC%E5%9C%B0%E5%A2%8A-%E9%91%BD%E7%9F%B3%E7%B4%8B" target="_blank">QMAT 巧拼地墊 4 入</a><span class="price">$790</span></li>
+        <li><a href="https://www.mysport.com.tw/commodity/38233" target="_blank">悠遊戶外 PVC 270×270 地布</a><span class="price">$725</span></li>
+        <li><a href="https://www.matsukasa.com/product.php?act=detail&pm_pk=846" target="_blank">3M 反光營繩 5mm×50m</a><span class="price">$700</span></li>
+        <li>NUIT 銅頭營槌<span class="price">$690</span></li>
+      </ul>
+      <div class="shop-note">分散在 Uncle Benny、悠遊戶外、QMAT、松果戶外、Naturehike 官方等。</div>
+    </div>
 
-    <tr data-status="must"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://shopee.tw/" target="_blank">蝦皮</a></b></td><td data-label="品項">
-      <a href="https://shopee.tw/search?keyword=BMW%20F45%20%E9%81%AE%E5%85%89%E7%B0%BE" target="_blank">BMW F45 全車磁吸遮光簾 7 片</a> ~$1,850 ·
-      前後車窗紗網 4 片組 ~$300 ·
-      <a href="https://shopee.tw/search?keyword=%E9%9C%B2%E7%87%9F%E7%94%A8%E7%A0%A7%E6%9D%BF" target="_blank">露營砧板 ×2</a> ~$150 ·
-      25mm 壓扣束帶 ~$150 ·
-      <a href="https://shopee.tw/search?keyword=%E9%87%8E%E7%87%9F%E5%B7%A5%E5%85%B7%E5%8C%85" target="_blank">多功能鉗 16 合 1</a> ~$250 ·
-      天幕沙袋 4 入 ~$315 ·
-      <a href="https://shopee.tw/search?keyword=%E5%86%B0%E7%AE%B1%E6%BA%AB%E5%BA%A6%E8%A8%88" target="_blank">無線探針電子溫度計</a> ~$150 ·
-      麂皮速乾巾 ×2 ~$98 ·
-      EVA 包頭拖鞋 ×2 ~$400 ·
-      矽膠折疊水碗 ~$199
-    </td><td data-label="小計"><b>NT$ 3,862</b></td></tr>
+    <div class="shop-card">
+      <div class="shop-card-head"><h3><a href="https://shopee.tw/" target="_blank">⑥ 蝦皮</a></h3><span class="shop-total">NT$ 3,862</span></div>
+      <ul>
+        <li><a href="https://shopee.tw/search?keyword=BMW%20F45%20%E9%81%AE%E5%85%89%E7%B0%BE" target="_blank">BMW F45 磁吸遮光簾 7 片</a><span class="price">~$1,850</span></li>
+        <li>EVA 包頭拖鞋 ×2<span class="price">~$400</span></li>
+        <li>天幕沙袋 4 入<span class="price">~$315</span></li>
+        <li>前後車窗紗網 4 片組<span class="price">~$300</span></li>
+        <li><a href="https://shopee.tw/search?keyword=%E9%87%8E%E7%87%9F%E5%B7%A5%E5%85%B7%E5%8C%85" target="_blank">多功能鉗 16 合 1</a><span class="price">~$250</span></li>
+        <li>矽膠折疊水碗<span class="price">~$199</span></li>
+        <li><a href="https://shopee.tw/search?keyword=%E9%9C%B2%E7%87%9F%E7%94%A8%E7%A0%A7%E6%9D%BF" target="_blank">露營砧板 ×2</a><span class="price">~$150</span></li>
+        <li>25mm 壓扣束帶<span class="price">~$150</span></li>
+        <li><a href="https://shopee.tw/search?keyword=%E5%86%B0%E7%AE%B1%E6%BA%AB%E5%BA%A6%E8%A8%88" target="_blank">無線探針電子溫度計</a><span class="price">~$150</span></li>
+        <li>麂皮速乾巾 ×2<span class="price">~$98</span></li>
+      </ul>
+      <div class="shop-note">優先選有「免運券」的商城賣家。</div>
+    </div>
 
-    <tr data-status="suggest"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://tw.buy.yahoo.com/" target="_blank">Yahoo 購物中心</a></b></td><td data-label="品項">
-      <a href="https://tw.buy.yahoo.com/gdsale/gdsale.asp?gdid=p0830263644426" target="_blank">D 型旋鎖登山扣 4 入</a> ~$165
-    </td><td data-label="小計"><b>NT$ 165</b></td></tr>
+    <div class="shop-card">
+      <div class="shop-card-head"><h3><a href="https://www.offlineoutdoor.com/products/tbsdark" target="_blank">⑦ OFFLINE 官方</a></h3><span class="shop-total">NT$ 3,480</span></div>
+      <ul>
+        <li><a href="https://www.offlineoutdoor.com/products/tbsdark" target="_blank">離線桌組 TBSDARK</a><span class="price">$3,480</span></li>
+      </ul>
+      <div class="shop-note">兩單位 IGT 主桌，搭 OWL 滑軌與瀝水袋。</div>
+    </div>
 
-    <tr data-status="suggest"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://decathlon.tw/" target="_blank">迪卡儂</a></b></td><td data-label="品項">
-      <a href="https://decathlon.tw/dsm-328250.html" target="_blank">Forclaz HL500 USB 200 流明頭燈 ×2</a> $1,198
-    </td><td data-label="小計"><b>NT$ 1,198</b></td></tr>
+    <div class="shop-card">
+      <div class="shop-card-head"><h3><a href="https://www.oceanbaby.com.tw/categories/car-mattress" target="_blank">⑧ PAMABE 官方</a></h3><span class="shop-total">NT$ 1,580</span></div>
+      <ul>
+        <li><a href="https://www.oceanbaby.com.tw/products/%E8%BB%8A%E6%B3%8A%E7%A9%BA%E9%96%93%E5%B9%B3%E6%95%B4%E5%8C%96%E7%B5%84%E5%90%88-%E9%9B%99%E5%BA%A7b%E6%AC%BE" target="_blank">車泊平整化雙座 B 款</a><span class="price">$1,580</span></li>
+      </ul>
+      <div class="shop-note">客製品，momo 沒有 B 款。</div>
+    </div>
 
-    <tr data-status="suggest"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://shop.daiso.com.tw/" target="_blank">大創 DAISO（門市）</a></b></td><td data-label="品項">
-      調味料分裝盒 + 折疊掃把畚箕 + 小型收納盒 等小物
-    </td><td data-label="小計"><b>NT$ 100–200</b></td></tr>
+    <div class="shop-card">
+      <div class="shop-card-head"><h3><a href="https://switchbot.tw/" target="_blank">⑨ SwitchBot / HOOMENT</a></h3><span class="shop-total">NT$ 1,430</span></div>
+      <ul>
+        <li><a href="https://switchbot.tw/products/switchbot-meter-plus/" target="_blank">SwitchBot Meter Plus</a><span class="price">$690</span></li>
+        <li><a href="https://www.hooment.com/product-page/hooment-%E6%80%A5%E6%95%91%E5%8C%85" target="_blank">HOOMENT 寵物急救包</a><span class="price">$740</span></li>
+      </ul>
+      <div class="shop-note">藍牙溫濕度計監控貓帳；急救包可用 momo 替代品。</div>
+    </div>
 
-    <tr data-status="suggest"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://unclebenny.com.tw/" target="_blank">Uncle Benny / Camp World 露營專賣店</a></b></td><td data-label="品項">
-      <a href="https://unclebenny.com.tw/products/thor-box" target="_blank">THOR 53L 收納箱</a> ~$1,530 ·
-      <a href="https://www.mysport.com.tw/commodity/38233" target="_blank">悠遊戶外 PVC 270×270 地布</a> $725 ·
-      <a href="https://qmat.com.tw/products/%E5%B7%A7%E6%8B%BC%E5%9C%B0%E5%A2%8A-%E9%91%BD%E7%9F%B3%E7%B4%8B" target="_blank">QMAT 巧拼地墊 4 入</a> $790 ·
-      <a href="https://www.matsukasa.com/product.php?act=detail&pm_pk=846" target="_blank">3M 反光營繩 5mm×50m</a> $700 ·
-      NUIT 銅頭營槌 $690 ·
-      <a href="https://www.naturehiketw.com/collections/waterproof-bag" target="_blank">Naturehike 防水袋 20L+30L</a> $1,000
-    </td><td data-label="小計"><b>NT$ 5,435</b></td></tr>
+    <div class="shop-card">
+      <div class="shop-card-head"><h3><a href="https://decathlon.tw/" target="_blank">⑩ 迪卡儂</a></h3><span class="shop-total">NT$ 1,198</span></div>
+      <ul>
+        <li><a href="https://decathlon.tw/dsm-328250.html" target="_blank">Forclaz HL500 USB 200 流明 ×2</a><span class="price">$1,198</span></li>
+      </ul>
+      <div class="shop-note">門市可試戴；要更耐用可改 Fenix HM50R V2。</div>
+    </div>
 
-    <tr data-status="suggest"><td><input type="checkbox"></td><td data-label="平台"><b><a href="https://switchbot.tw/" target="_blank">SwitchBot 官方 / sioh.store</a></b></td><td data-label="品項">
-      <a href="https://switchbot.tw/products/switchbot-meter-plus/" target="_blank">SwitchBot Meter Plus 藍牙溫濕度計</a> $690 ·
-      <a href="https://www.hooment.com/product-page/hooment-%E6%80%A5%E6%95%91%E5%8C%85" target="_blank">HOOMENT 寵物急救包</a> $740
-    </td><td data-label="小計"><b>NT$ 1,430</b></td></tr>
+    <div class="shop-card">
+      <div class="shop-card-head"><h3><a href="https://tw.buy.yahoo.com/" target="_blank">⑪ Yahoo 購物</a></h3><span class="shop-total">NT$ 165</span></div>
+      <ul>
+        <li><a href="https://tw.buy.yahoo.com/gdsale/gdsale.asp?gdid=p0830263644426" target="_blank">D 型旋鎖登山扣 4 入</a><span class="price">~$165</span></li>
+      </ul>
+      <div class="shop-note">務必選 Screw Lock 旋鎖款，貓爪撥不開彈簧扣。</div>
+    </div>
 
-    <tr data-status="suggest"><td><input type="checkbox"></td><td data-label="平台"><b>屈臣氏 / 康是美（門市）</b></td><td data-label="品項">
-      普拿疼、表飛鳴、息斯敏、優碘棉片、3M 防水 OK繃 等藥品自配
-    </td><td data-label="小計"><b>NT$ 300–500</b></td></tr>
+    <div class="shop-card">
+      <div class="shop-card-head"><h3><a href="https://shop.daiso.com.tw/" target="_blank">⑫ 大創 DAISO（門市）</a></h3><span class="shop-total">~NT$ 200</span></div>
+      <ul>
+        <li>調味料分裝盒（小型）<span class="price">$39–69</span></li>
+        <li>折疊掃把畚箕<span class="price">$39–69</span></li>
+        <li>小型收納盒、矽膠摺疊小物<span class="price">$39–69</span></li>
+      </ul>
+      <div class="shop-note">建議實體門市挑，CP 值無敵。</div>
+    </div>
 
-  </tbody></table>
-  <div class="notice"><strong>運費省錢小技巧：</strong>① OWL CAMP 官方滿 NT$ 2,000 通常免運，VanShelter + TPU 門 + 瀝水袋 + 滑軌一次下單最省。② momo 信用卡單筆滿額（如 $3,000）+ Mo幣回饋最高約 7%。③ PChome P 幣會員回饋約 1–3%。④ 蝦皮商城選有「免運券」賣家，無上限免運。⑤ 大創、迪卡儂、屈臣氏建議直接門市採買省運費。</div>
+    <div class="shop-card">
+      <div class="shop-card-head"><h3>⑬ 屈臣氏 / 康是美（門市）</h3><span class="shop-total">NT$ 300–500</span></div>
+      <ul>
+        <li>普拿疼、表飛鳴、息斯敏<span class="price">~$200</span></li>
+        <li>優碘棉片、3M 防水 OK繃<span class="price">~$150</span></li>
+        <li>派卡瑞丁防蚊噴霧（備用）<span class="price">~$100</span></li>
+      </ul>
+      <div class="shop-note">藥品自配比成包醫療包更實用。</div>
+    </div>
+
+  </div>
+
+  <div class="notice"><strong>運費省錢小技巧：</strong>① OWL 滿 NT$ 2,000 免運。② momo 信用卡滿額 + Mo 幣回饋最高約 7%。③ PChome P 幣會員回饋約 1–3%。④ 蝦皮商城選「免運券」賣家。⑤ 大創、迪卡儂、屈臣氏建議直接門市採買。</div>
 </section>
 
 <section id="loading" class="card">
