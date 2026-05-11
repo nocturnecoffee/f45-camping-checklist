@@ -1,378 +1,653 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BMW F45 兩人一貓車宿露營設備清單｜2026/05 實測版</title>
-  <meta name="description" content="BMW 2015 218d F45 Active Tourer 兩人一貓露營區車宿裝備清單。逐項用瀏覽器實測現貨與真實售價，採 Amazon US 直送 NeoAir XLite NXT Regular Short ×2 + OWL 官網 + momo + 蝦皮 + 野道家 五通路。" />
-  <style>
-    :root{
-      --bg:#f7f2e8; --paper:#fffaf0; --ink:#1f211b; --muted:#6e695f; --line:#ded2bd;
-      --forest:#284b3b; --forest2:#3f6b54; --sage:#dfeade; --sand:#ead7b6; --gold:#e1b25b;
-      --blue:#dce9ed; --danger:#9c3f35; --pink:#ffe0e7; --shadow:0 18px 42px rgba(40,75,59,.12);
-      --radius:24px; --max:1180px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0; color:var(--ink); background:
-        radial-gradient(900px 520px at 8% -8%, rgba(223,234,222,.9), transparent 65%),
-        radial-gradient(780px 460px at 95% 2%, rgba(234,215,182,.95), transparent 62%), var(--bg);
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;
-      line-height:1.7;
-    }
-    a{color:var(--forest); text-decoration-thickness:2px; text-underline-offset:3px; font-weight:700}
-    .wrap{max-width:var(--max); margin:auto; padding:28px 20px 72px}
-    .hero{position:relative; overflow:hidden; min-height:360px; border-radius:34px; padding:34px; color:#fffaf0; background:linear-gradient(135deg, rgba(40,75,59,.98), rgba(63,107,84,.9)); box-shadow:var(--shadow)}
-    .hero:after{content:""; position:absolute; right:-100px; bottom:-140px; width:430px; height:430px; border-radius:50%; background:rgba(234,215,182,.22)}
-    .eyebrow{display:inline-flex; gap:8px; align-items:center; border:1px solid rgba(255,250,240,.32); background:rgba(255,255,255,.08); border-radius:999px; padding:8px 12px; font-size:13px; letter-spacing:.06em}
-    h1{font-size:clamp(34px,5vw,62px); line-height:1.06; margin:22px 0 16px; letter-spacing:-.04em}
-    .hero p{max-width:780px; font-size:18px; color:rgba(255,250,240,.93)}
-    .hero-grid{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:28px; position:relative; z-index:2}
-    .mini{background:rgba(255,250,240,.1); border:1px solid rgba(255,250,240,.22); border-radius:18px; padding:14px 16px; backdrop-filter:blur(6px)}
-    .mini strong{display:block; font-size:18px; color:#fff}.mini span{font-size:13px; color:rgba(255,250,240,.78)}
-    .toolbar{display:grid; grid-template-columns:1fr auto; gap:14px; margin:22px 0; position:sticky; top:0; z-index:20; padding:12px 0; backdrop-filter:blur(12px)}
-    .searchbox{display:flex; gap:10px; align-items:center; background:rgba(255,250,240,.92); border:1px solid var(--line); border-radius:18px; padding:10px 14px; box-shadow:0 8px 24px rgba(40,75,59,.08)}
-    .searchbox input{width:100%; border:0; outline:0; background:transparent; font:inherit; color:var(--ink)}
-    .btns{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end}
-    button{border:1px solid var(--line); background:rgba(255,250,240,.92); color:var(--forest); border-radius:999px; padding:9px 13px; font:inherit; cursor:pointer; white-space:nowrap}
-    button.active{background:var(--forest); color:#fffaf0; border-color:var(--forest)}
-    .grid{display:grid; grid-template-columns:280px 1fr; gap:22px; align-items:start}
-    aside{position:sticky; top:84px; background:rgba(255,250,240,.8); border:1px solid var(--line); border-radius:var(--radius); padding:18px; box-shadow:0 10px 28px rgba(40,75,59,.08)}
-    aside h2{font-size:18px; margin:0 0 10px}.nav a{display:block; padding:8px 10px; border-radius:12px; color:var(--ink); text-decoration:none; font-size:14px}.nav a:hover{background:var(--sage)}
-    .legend{margin-top:18px; display:grid; gap:8px; font-size:13px; color:var(--muted)}.dot{display:inline-block; width:10px; height:10px; border-radius:999px; margin-right:6px}.must{background:var(--forest)}.suggest{background:var(--gold)}.defer{background:#8ba7a8}.owned{background:#777}.no{background:var(--danger)}.choice{background:#b77bd1}
-    section.card{background:rgba(255,250,240,.94); border:1px solid var(--line); border-radius:var(--radius); padding:24px; margin-bottom:20px; box-shadow:0 8px 28px rgba(40,75,59,.07)}
-    .section-title{display:flex; align-items:end; justify-content:space-between; gap:14px; margin-bottom:12px} h2{font-size:30px; line-height:1.12; margin:0; letter-spacing:-.02em}.hint{color:var(--muted); font-size:14px}
-    .notice{background:#fff; border:1px solid var(--line); border-radius:18px; padding:15px 16px; margin:12px 0}.notice strong{color:var(--forest)}
-    .notice.warn{background:#fff5e9; border-color:#e9a85b}.notice.warn strong{color:#7a4400}
-    .tokens{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px}.token{padding:14px; background:#fff; border:1px solid var(--line); border-radius:16px}.token b{display:block; color:var(--forest)}
-    table{width:100%; border-collapse:separate; border-spacing:0 10px; margin-top:10px} th{font-size:13px; color:var(--muted); font-weight:800; text-align:left; padding:0 12px} td{background:#fff; padding:13px 12px; vertical-align:top; border-top:1px solid var(--line); border-bottom:1px solid var(--line)} td:first-child{border-left:1px solid var(--line); border-radius:14px 0 0 14px; width:36px} td:last-child{border-right:1px solid var(--line); border-radius:0 14px 14px 0}.item-name{font-weight:900; color:var(--ink)}.brand{color:var(--forest); font-weight:800}.qty{white-space:nowrap; color:var(--muted)}
-    .badge{display:inline-flex; align-items:center; gap:6px; padding:4px 8px; border-radius:999px; font-size:12px; font-weight:800}.badge.must{background:var(--sage); color:var(--forest)}.badge.suggest{background:#fff1d3; color:#75500b}.badge.defer{background:var(--blue); color:#36585c}.badge.owned{background:#efefef; color:#555}.badge.no{background:#f4ddd9; color:var(--danger)}.badge.choice{background:#efe0ff; color:#683a7e}
-    .tag{display:inline-block; padding:2px 7px; margin:2px; border-radius:999px; background:var(--pink); color:#c50d2e; font-weight:800; font-size:12px}
-    .tag.ok{background:#dfeade; color:var(--forest)}
-    .split{display:grid; grid-template-columns:1fr 1fr; gap:14px}.list-card{background:#fff; border:1px solid var(--line); border-radius:18px; padding:16px}.list-card h3{margin:0 0 8px; color:var(--forest)}.list-card ul{margin:0; padding-left:20px}
-    .sequence{counter-reset:step; display:grid; gap:9px; margin-top:10px}.sequence li{list-style:none; display:flex; gap:10px; background:#fff; border:1px solid var(--line); border-radius:14px; padding:10px 12px}.sequence li:before{counter-increment:step; content:counter(step); display:inline-grid; place-items:center; width:24px; height:24px; border-radius:999px; background:var(--forest); color:#fff; font-weight:900; flex:0 0 24px}
-    input[type="checkbox"]{width:18px; height:18px; accent-color:var(--forest)}.hidden{display:none!important}
-    .footer{margin-top:24px; padding:22px; border-radius:var(--radius); background:#262820; color:#f7f2e8}.footer a{color:#f4d58d}.sources{display:grid; gap:8px; margin-top:10px; font-size:14px; color:rgba(247,242,232,.88)}
-    @media(max-width:980px){.hero-grid,.tokens{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}aside{position:relative; top:auto}.toolbar{position:relative; grid-template-columns:1fr}}
-    @media(max-width:680px){.wrap{padding:16px 12px 48px}.hero{padding:24px; border-radius:24px}.hero-grid,.tokens,.split{grid-template-columns:1fr}table,thead,tbody,tr,td,th{display:block}thead{display:none}tr{margin-bottom:12px; background:#fff; border:1px solid var(--line); border-radius:16px; padding:10px}td{border:0!important; border-radius:0!important; padding:6px 4px; background:transparent}td:before{content:attr(data-label); display:block; font-size:12px; color:var(--muted); font-weight:800}.section-title{display:block}}
-    @media print{body{background:white}.toolbar,aside{display:none!important}.wrap{max-width:none; padding:0}.hero,section.card,.footer{box-shadow:none; break-inside:avoid; border:1px solid #ccc}.hero{background:#284b3b!important; color:white; min-height:auto}tr{break-inside:avoid}input[type="checkbox"]{appearance:none; border:1px solid #333; width:14px; height:14px}}
-    .shop-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:14px; margin:18px 0 12px}
-    .shop-card{background:#fffaf0; border:1px solid var(--line); border-radius:18px; padding:18px; display:flex; flex-direction:column}
-    .shop-card.priority{border:2px solid var(--forest); box-shadow:0 6px 18px rgba(40,75,59,.08)}
-    .shop-card-head{display:flex; align-items:baseline; justify-content:space-between; gap:10px; margin-bottom:12px; padding-bottom:10px; border-bottom:1px dashed var(--line)}
-    .shop-card-head h3{margin:0; font-size:17px; color:var(--forest); letter-spacing:-.01em}
-    .shop-card-head h3 a{color:inherit; text-decoration:none}
-    .shop-card-head h3 a:hover{text-decoration:underline}
-    .shop-total{font-size:18px; font-weight:800; color:var(--forest); white-space:nowrap; font-variant-numeric:tabular-nums}
-    .shop-card ul{list-style:none; padding:0; margin:0; flex:1}
-    .shop-card li{display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:8px 0; border-bottom:1px dashed rgba(223,211,189,.6); font-size:14px; line-height:1.5}
-    .shop-card li:last-child{border-bottom:0}
-    .shop-card li .price{color:var(--muted); white-space:nowrap; font-variant-numeric:tabular-nums; font-weight:700}
-    .shop-card li a{color:var(--ink); text-decoration:none; border-bottom:1px solid transparent}
-    .shop-card li a:hover{border-bottom-color:var(--forest); color:var(--forest)}
-    .shop-card .shop-note{font-size:12px; color:var(--muted); margin-top:10px; padding-top:8px; border-top:1px dashed var(--line)}
-    .budget-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:8px; margin:14px 0 4px}
-    .budget-cell{background:#fffaf0; border:1px solid var(--line); border-radius:12px; padding:10px 12px; text-align:center}
-    .budget-cell .b-label{font-size:12px; color:var(--muted); display:block}
-    .budget-cell .b-value{font-size:16px; font-weight:800; color:var(--forest); font-variant-numeric:tabular-nums}
-    .budget-cell.total{background:var(--forest); border-color:var(--forest)}
-    .budget-cell.total .b-label, .budget-cell.total .b-value{color:#fffaf0}
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BMW F45 兩人一貓車宿露營搭配指南｜顧問版</title>
+<meta name="description" content="BMW 2015 218d F45 Active Tourer 兩人一貓車宿露營完整搭配指南。不是商品清單，是顧問風格說明：每個系統做什麼用、為什麼這樣搭、要買多少根、避開什麼陷阱。" />
+<style>
+:root{
+  --bg:#f7f2e8; --paper:#fffaf0; --ink:#1f211b; --muted:#6e695f; --line:#ded2bd;
+  --forest:#284b3b; --forest2:#3f6b54; --sage:#dfeade; --sand:#ead7b6; --gold:#e1b25b;
+  --blue:#dce9ed; --danger:#9c3f35; --warn:#7a4400; --warnbg:#fff5e9;
+  --shadow:0 18px 42px rgba(40,75,59,.12); --radius:24px; --max:1100px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:var(--ink); background:
+    radial-gradient(900px 520px at 8% -8%, rgba(223,234,222,.9), transparent 65%),
+    radial-gradient(780px 460px at 95% 2%, rgba(234,215,182,.95), transparent 62%), var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;
+  line-height:1.75; font-size:16px;
+}
+a{color:var(--forest); text-decoration-thickness:2px; text-underline-offset:3px; font-weight:700}
+.wrap{max-width:var(--max); margin:auto; padding:28px 20px 72px}
+.hero{position:relative; overflow:hidden; min-height:340px; border-radius:34px; padding:34px; color:#fffaf0;
+  background:linear-gradient(135deg, rgba(40,75,59,.98), rgba(63,107,84,.9)); box-shadow:var(--shadow); margin-bottom:24px}
+.hero:after{content:""; position:absolute; right:-100px; bottom:-140px; width:430px; height:430px;
+  border-radius:50%; background:rgba(234,215,182,.22)}
+.eyebrow{display:inline-flex; gap:8px; align-items:center; border:1px solid rgba(255,250,240,.32);
+  background:rgba(255,255,255,.08); border-radius:999px; padding:8px 12px; font-size:13px; letter-spacing:.06em}
+h1{font-size:clamp(34px,5vw,60px); line-height:1.06; margin:22px 0 16px; letter-spacing:-.04em}
+.hero p{max-width:780px; font-size:18px; color:rgba(255,250,240,.93)}
+.hero-grid{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:28px; position:relative; z-index:2}
+.mini{background:rgba(255,250,240,.1); border:1px solid rgba(255,250,240,.22); border-radius:18px; padding:14px 16px}
+.mini strong{display:block; font-size:18px; color:#fff}.mini span{font-size:13px; color:rgba(255,250,240,.78)}
+nav.toc{display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:8px;
+  background:rgba(255,250,240,.94); border:1px solid var(--line); border-radius:var(--radius); padding:16px; margin-bottom:20px;
+  box-shadow:0 4px 14px rgba(40,75,59,.05)}
+nav.toc a{font-size:14px; padding:8px 10px; border-radius:10px; background:#fff; border:1px solid var(--line);
+  color:var(--ink); text-decoration:none; text-align:center; font-weight:600}
+nav.toc a:hover{background:var(--sage); color:var(--forest)}
+
+section.system{background:rgba(255,250,240,.95); border:1px solid var(--line); border-radius:var(--radius);
+  padding:28px; margin-bottom:20px; box-shadow:0 8px 28px rgba(40,75,59,.07)}
+section.system > h2{font-size:30px; line-height:1.12; margin:0 0 4px; letter-spacing:-.02em; color:var(--forest)}
+.system-budget{display:inline-block; background:var(--forest); color:#fffaf0; padding:4px 12px; border-radius:999px;
+  font-size:14px; font-weight:800; margin-bottom:14px}
+.system-role{background:var(--sage); border-left:4px solid var(--forest); padding:14px 18px; border-radius:12px;
+  margin:10px 0 20px; font-size:16px; line-height:1.7}
+.system-role strong{color:var(--forest)}
+
+.main-item{background:#fff; border:2px solid var(--forest); border-radius:18px; padding:20px; margin:14px 0;
+  display:grid; grid-template-columns:1fr auto; gap:14px; align-items:center}
+.main-item h3{margin:0 0 6px; font-size:18px; color:var(--forest)}
+.main-item .desc{font-size:14px; color:var(--muted); line-height:1.6}
+.main-item .price{font-size:22px; font-weight:900; color:var(--forest); white-space:nowrap; font-variant-numeric:tabular-nums}
+.main-item.warn{border-color:var(--gold); background:#fffaf0}
+.main-item.warn h3{color:var(--warn)}
+
+.components{display:grid; gap:14px; margin-top:14px}
+.comp{background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px 18px}
+.comp h4{margin:0 0 6px; font-size:15px; color:var(--forest); display:flex; align-items:center; gap:8px}
+.comp h4 .num{display:inline-grid; place-items:center; width:24px; height:24px; border-radius:50%;
+  background:var(--forest); color:#fff; font-size:12px; font-weight:900}
+.comp .why{font-size:14px; color:var(--ink); margin:6px 0; line-height:1.7}
+.comp .what{font-size:14px; padding:8px 12px; background:var(--sage); border-radius:8px; margin-top:8px;
+  font-weight:600; display:flex; justify-content:space-between; gap:12px; align-items:center; flex-wrap:wrap}
+.comp .what a{color:var(--forest)}
+.comp .what .p{color:var(--forest); white-space:nowrap; font-variant-numeric:tabular-nums; font-weight:900}
+
+.advice{background:var(--warnbg); border:1px solid var(--gold); border-radius:14px; padding:14px 18px; margin-top:18px}
+.advice h4{margin:0 0 8px; font-size:15px; color:var(--warn); display:flex; align-items:center; gap:8px}
+.advice ul{margin:0; padding-left:20px}
+.advice li{font-size:14px; line-height:1.7; margin-bottom:4px}
+
+.skipped{background:#f0f0e8; border:1px dashed var(--muted); border-radius:14px; padding:14px 18px;
+  margin-top:14px; font-size:14px; color:var(--muted)}
+.skipped strong{color:var(--ink)}
+
+.budget-summary{background:var(--forest); color:#fffaf0; border-radius:var(--radius); padding:28px; margin:24px 0}
+.budget-summary h2{color:#fffaf0; font-size:24px; margin:0 0 14px}
+.budget-summary table{width:100%; border-collapse:collapse}
+.budget-summary td{padding:8px 12px; border-bottom:1px dashed rgba(255,250,240,.25); font-size:15px}
+.budget-summary td.amt{text-align:right; font-variant-numeric:tabular-nums; font-weight:900}
+.budget-summary tr.total td{border-bottom:0; border-top:2px solid rgba(255,250,240,.5); padding-top:14px; font-size:18px}
+
+.shop-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px; margin:14px 0}
+.shop-card{background:#fffaf0; border:1px solid var(--line); border-radius:18px; padding:18px}
+.shop-card h3{margin:0 0 10px; font-size:16px; color:var(--forest)}
+.shop-card h3 a{color:inherit; text-decoration:none}
+.shop-card .total{font-size:18px; font-weight:900; color:var(--forest); display:block; margin-bottom:10px}
+.shop-card .note{font-size:13px; color:var(--muted); line-height:1.6; padding-top:8px; border-top:1px dashed var(--line); margin-top:10px}
+
+.flow{counter-reset:step; display:grid; gap:10px; margin-top:12px}
+.flow li{list-style:none; display:flex; gap:12px; background:#fff; border:1px solid var(--line); border-radius:14px;
+  padding:12px 14px; align-items:flex-start}
+.flow li:before{counter-increment:step; content:counter(step); display:inline-grid; place-items:center;
+  width:28px; height:28px; border-radius:50%; background:var(--forest); color:#fff; font-weight:900; flex:0 0 28px}
+
+footer.refs{margin-top:24px; padding:24px; border-radius:var(--radius); background:#262820; color:#f7f2e8}
+footer.refs h2{color:#fffaf0; margin:0 0 12px; font-size:20px}
+footer.refs a{color:#f4d58d; display:block; margin:4px 0; font-size:14px}
+
+@media(max-width:680px){
+  .wrap{padding:16px 12px 48px}
+  .hero{padding:24px; border-radius:24px}
+  .hero-grid{grid-template-columns:1fr 1fr}
+  .main-item{grid-template-columns:1fr}
+  .comp .what{flex-direction:column; align-items:flex-start}
+}
+</style>
 </head>
 <body>
 <main class="wrap">
+
 <header class="hero">
-  <span class="eyebrow">BMW F45 · 兩人一貓 · 露營區車宿 · 2026/05 實測版</span>
-  <h1>露營設備清單<br/>瀏覽器實測 · 五通路</h1>
-  <p>2026/05/10 用 Chrome 自動化逐項實測：商品是否在賣、規格、庫存、實際售價。床墊放棄台灣零售（NeoAir 短版台灣完全沒貨），改 <strong>Amazon US 直送台灣</strong>免運（NT$ 14,838 / 8-9 天）。其他主力分配：<strong>OWL 官網</strong>（VanShelter TC）+ <strong>momo</strong>（高背椅、燈、THOR、貓籠、營釘地布等小物一單滿足）+ <strong>蝦皮專屬賣場</strong>（BMW F45 磁吸遮陽簾）+ <strong>野道家</strong>（OFFLINE 桌補件）。</p>
+  <span class="eyebrow">BMW F45 · 兩人一貓 · 露營區車宿 · 2026/05 顧問版</span>
+  <h1>車宿露營搭配指南<br/>給自己 + 女友 + 貓</h1>
+  <p>這不是商品清單，是搭配指南。每個系統先講<strong>做什麼用</strong>、<strong>為什麼這樣搭</strong>、<strong>陷阱在哪</strong>，再告訴你買什麼、買幾個。整體調性：<strong>低調 · 穩重 · 舒適</strong>，黑色為主色（≥ 60%），可省的地方家裡有的優先用。</p>
   <div class="hero-grid">
-    <div class="mini"><strong>車內睡眠</strong><span>Amazon US 直送 NeoAir XLite NXT R-Short ×2</span></div>
-    <div class="mini"><strong>車外客廳</strong><span>OWL VanShelter TC + TPU 門</span></div>
-    <div class="mini"><strong>貓咪安全</strong><span>SKYLIFE 摺疊貓籠 + 雙重固定</span></div>
-    <div class="mini"><strong>採購策略</strong><span>5 通路：Amazon + OWL + momo + 蝦皮 + 野道家</span></div>
+    <div class="mini"><strong>車內</strong><span>純睡眠空間，兩張短版充氣墊並排</span></div>
+    <div class="mini"><strong>車外</strong><span>OWL 客廳 + 烹飪桌 + 貓房</span></div>
+    <div class="mini"><strong>貓</strong><span>鐵製摺疊籠 + 雙重鎖 + 溫度監控</span></div>
+    <div class="mini"><strong>總預算</strong><span>約 NT$ 79,000（已扣家裡有的）</span></div>
   </div>
 </header>
 
-<div class="toolbar">
-  <label class="searchbox" aria-label="搜尋"><span>🔎</span><input id="search" type="search" placeholder="搜尋：NeoAir、OWL、SKYLIFE、營釘、貓籠…" /></label>
-  <div class="btns" id="filters">
-    <button class="active" data-filter="all">全部</button><button data-filter="must">必買</button><button data-filter="suggest">建議</button><button data-filter="choice">二選一</button><button data-filter="defer">延後</button><button data-filter="owned">已有</button><button data-filter="no">不買</button>
+<nav class="toc">
+  <a href="#sleep">A. 車內睡眠</a>
+  <a href="#shelter">B. 車外帳</a>
+  <a href="#cat">C. 貓咪</a>
+  <a href="#table">D. 桌面收納</a>
+  <a href="#chair">E. 椅子</a>
+  <a href="#power">F. 照明電力</a>
+  <a href="#kitchen">G. 料理</a>
+  <a href="#safety">H. 安全清潔</a>
+  <a href="#shopping">採購整理</a>
+  <a href="#loading">裝搭流程</a>
+</nav>
+
+<section class="system" id="sleep">
+  <h2>A. 車內睡眠系統</h2>
+  <span class="system-budget">小計 NT$ 18,800</span>
+  <div class="system-role">
+    <strong>這個系統做什麼：</strong>把 F45 後座放倒後形成的 170×100cm 空間變成你跟女友的「車內臥室」。重點是<strong>短版充氣墊兩張並排</strong>（單買雙人款台灣零售買不到合用尺寸），加 PAMABE 延長墊延伸到前座位置，遮陽簾擋光擋蚊。
   </div>
-</div>
 
-<div class="grid">
-<aside>
-  <h2>目錄</h2>
-  <nav class="nav">
-    <a href="#premise">使用前提</a><a href="#no-buy">確定不買 / 不帶</a><a href="#owned">已經有的裝備</a><a href="#sleep">A. 車內睡眠</a><a href="#shelter">B. 車外帳 / 客廳</a><a href="#cat">C. 貓咪系統</a><a href="#igt">D. 桌面 / IGT / THOR</a><a href="#chair">E. 椅子</a><a href="#power">F. 照明 / 風扇 / 小電力</a><a href="#kitchen">G. 料理 / 保冷</a><a href="#safety">H. 工具 / 安全 / 清潔</a><a href="#shopping">按平台採購</a><a href="#loading">裝車與搭設流程</a><a href="#sources">參考連結</a>
-  </nav>
-  <div class="legend"><span><i class="dot must"></i>必買</span><span><i class="dot suggest"></i>建議</span><span><i class="dot choice"></i>二選一</span><span><i class="dot defer"></i>延後</span><span><i class="dot owned"></i>已有</span><span><i class="dot no"></i>不買</span></div>
-</aside>
-
-<div>
-<section id="premise" class="card">
-  <div class="section-title"><h2>使用前提</h2><span class="hint">最終規劃基準（2026/05 實測）</span></div>
-  <div class="tokens">
-    <div class="token"><b>車輛</b>BMW 2015 218d F45 Active Tourer</div><div class="token"><b>人數</b>2 人，176 / 160 cm，偏瘦</div><div class="token"><b>貓咪</b>1 隻，約 5.5kg，習慣外出籠與睡籠</div><div class="token"><b>車內床位</b>上限 170 × 100 cm（實測值）</div><div class="token"><b>營地</b>專門露營區，有廁所、洗澡、冰箱</div><div class="token"><b>天數</b>主要 2 天 1 夜，偶爾 3 天 2 夜</div><div class="token"><b>飲食</b>三明治、泡麵、牛排，簡單料理</div><div class="token"><b>電力</b>MacBook + Anker 737 PD（已有）+ 營地市電</div>
+  <div class="main-item">
+    <div>
+      <h3>主角：Therm-a-Rest NeoAir XLite NXT Regular Short ×2</h3>
+      <div class="desc">167×51×7.6cm｜兩張並排 167×102cm（只超寬 2cm，自然受擠不影響睡感）｜R 值 4.5 全季可用｜收納像 1L 寶特瓶｜10 年保固。<strong>Amazon US 直送台灣，免運，含進口稅約 NT$ 7,419/張</strong>。<a href="https://www.amazon.com/Therm-Rest-Ultralight-Backpacking-Sleeping/dp/B0CS4NHPVP/" target="_blank">Amazon 商品頁</a></div>
+    </div>
+    <div class="price">$14,838</div>
   </div>
-  <div class="notice warn"><strong>2026/05/10 實測重點：</strong>① ROCKLAND 整個 NeoAir 系列只剩兩款且都「售完」，台灣零售完全買不到 168 短版充氣墊；② 改採 <a href="https://www.amazon.com/Therm-Rest-Ultralight-Backpacking-Sleeping/dp/B0CS4NHPVP/" target="_blank"><b>Amazon US 直送台灣</b></a>（FREE Shipping，含進口關稅 NT$ 1,159/張），<b>單張總價 NT$ 7,419，雙張 NT$ 14,838</b>，預計 5/18-19 到貨；③ 床墊規格 168×51×7.6cm，兩張並排 168×102（寬度只超 2cm，可接受）+ 4.5 R-value 全季可用 + 收納像 1L 寶特瓶。</div>
-  <div class="notice"><strong>採購策略（五通路）：</strong>① <a href="https://www.amazon.com/" target="_blank">Amazon US</a> 床墊；② <a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">OWL CAMP 官方</a> VanShelter TC + TPU 門；③ <a href="https://www.momoshop.com.tw/" target="_blank">momo</a> 主力一單買 70%（高背椅、燈、THOR、貓籠、釘繩槌、地布、安全料理小物）；④ <a href="https://shopee.tw/bmw-2%E7%B3%BB%E9%81%AE%E9%99%BD%E7%B0%BE-F45-2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B4%97%E7%B6%B2-%E7%A3%81%E5%90%B8%E9%81%AE%E9%99%BD%E7%B0%BE-%E5%AF%B6%E9%A6%AC2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B0%BE-%E6%B1%BD%E8%BB%8A%E7%B4%97%E7%AA%97-%E9%98%B2%E8%9A%8A%E8%9F%B2-%E5%B0%88%E7%94%A8%E6%B1%BD%E8%BB%8A%E9%81%AE%E9%99%BD%E7%B0%BE-%E8%BB%8A%E7%94%A8%E7%AA%97%E7%B0%BE-i.1040634028.23161644796" target="_blank">蝦皮</a> BMW 2 系 F45 磁吸遮陽簾（用戶找到的賣場）；⑤ <a href="https://www.daoyen27.com/" target="_blank">野道家</a> OFFLINE 離線桌組（補件）。</div>
-  <div class="notice"><strong>全清單預算（2026/05 實測查價）：</strong>合計約 <b>NT$ 80,000</b>，實際區間 NT$ 75,000–88,000。已扣除使用者「已有」的：醫藥包、兩件式雨衣、Anker 737 + 線材、貓砂盆、CARGO 一氧化碳偵測器（不採購）。</div>
-  <div class="budget-grid">
-    <div class="budget-cell"><span class="b-label">A 睡眠</span><span class="b-value">$19,200</span></div>
-    <div class="budget-cell"><span class="b-label">B 車外帳</span><span class="b-value">$24,400</span></div>
-    <div class="budget-cell"><span class="b-label">C 貓咪</span><span class="b-value">$3,400</span></div>
-    <div class="budget-cell"><span class="b-label">D 桌面</span><span class="b-value">$10,600</span></div>
-    <div class="budget-cell"><span class="b-label">E 椅子</span><span class="b-value">$5,960</span></div>
-    <div class="budget-cell"><span class="b-label">F 照明電力</span><span class="b-value">$13,200</span></div>
-    <div class="budget-cell"><span class="b-label">G 料理</span><span class="b-value">$1,500</span></div>
-    <div class="budget-cell"><span class="b-label">H 安全</span><span class="b-value">$1,700</span></div>
-    <div class="budget-cell total"><span class="b-label">合計</span><span class="b-value">$79,960</span></div>
+
+  <div class="components">
+    <div class="comp">
+      <h4><span class="num">1</span>延長墊（連接前座與後座的高度差）</h4>
+      <div class="why">F45 後座放倒後，跟前座椅背中間會有 20-30cm 的高度落差。<strong>把延長墊用扣具掛在兩個前座椅背後</strong>，與後座放倒形成同一平面，總睡眠長度可從 130cm 延伸到 175cm，這是 176cm 男生能伸直腳的關鍵。</div>
+      <div class="what"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=12979940" target="_blank">PAMABE 車泊座椅延長墊雙座款 74×126cm</a><span class="p">$1,580</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">2</span>BMW F45 專用磁吸遮陽簾</h4>
+      <div class="why">睡覺時隱私 + 防蚊蟲 + 早上不被陽光照醒。F45 太冷門，通用磁吸款貼合度差，要選車型專用 3D 開版款。下單前<strong>務必私訊賣家確認 2015 218d 對應</strong>。</div>
+      <div class="what"><a href="https://shopee.tw/bmw-2%E7%B3%BB%E9%81%AE%E9%99%BD%E7%B0%BE-F45-2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B4%97%E7%B6%B2-%E7%A3%81%E5%90%B8%E9%81%AE%E9%99%BD%E7%B0%BE-%E5%AF%B6%E9%A6%AC2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B0%BE-%E6%B1%BD%E8%BB%8A%E7%B4%97%E7%AA%97-%E9%98%B2%E8%9A%8A%E8%9F%B2-%E5%B0%88%E7%94%A8%E6%B1%BD%E8%BB%8A%E9%81%AE%E9%99%BD%E7%B0%BE-%E8%BB%8A%E7%94%A8%E7%AA%97%E7%B0%BE-i.1040634028.23161644796" target="_blank">蝦皮 BMW 2 系 F45 磁吸遮陽簾（你找到的賣場）</a><span class="p">~$2,000</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">3</span>黑色帆布壓縮收納套（讓收納袋外觀低調）</h4>
+      <div class="why">NeoAir XLite NXT 原廠是 Solar Flare 橘黃色 — 充氣後墊子大半被睡袋蓋住，但<strong>收納袋是亮橘色</strong>，跟你「低調穩重黑色主色」衝突。買兩個黑色帆布壓縮袋套上，所有時候看到的都是黑色。</div>
+      <div class="what">蝦皮搜「黑色 防水壓縮袋 30L」雙入<span class="p">~$400</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">4</span>充氣方式（不需另買幫浦）</h4>
+      <div class="why">NeoAir 內附 <strong>Pump Sack 充氣袋</strong>，1 分鐘充飽。不需要 FLEXTAIL 之類的電動幫浦（那是給棉被真空袋抽氣的，你用不上）。</div>
+    </div>
+  </div>
+
+  <div class="advice">
+    <h4>⚠ 顧問建議與陷阱</h4>
+    <ul>
+      <li><strong>不要充太滿</strong>：充飽 90% 即可。100% 飽夏天熱脹會撐破閥門。</li>
+      <li><strong>收納方向</strong>：先從腳端往頭端捲，邊捲邊放氣；氣完全排出後再扣上收納帶。</li>
+      <li><strong>不要直接攤在地上展開</strong>：F45 後廂或外帳的小石子可能刺破。先鋪一張 PAMABE 延長墊或床單再放 NeoAir。</li>
+      <li><strong>遮陽簾陷阱</strong>：F45 後三角窗形狀特殊，下單前要對方確認 7 片包含後三角窗 + 兩側後車門 + 兩側前車門 + 後尾門 + 前擋（共 7 片）。少於 7 片不要買。</li>
+      <li><strong>Amazon NeoAir 庫存警示</strong>：5/10 實測時 Regular Short 只剩 1 left，建議當下立刻下單，等決定全部再買可能就缺貨。</li>
+    </ul>
   </div>
 </section>
 
-<section id="no-buy" class="card">
-  <div class="section-title"><h2>確定不買 / 不帶</h2><span class="hint">避免花錢失控</span></div>
-  <table><thead><tr><th></th><th>項目</th><th>狀態</th><th>原因</th></tr></thead><tbody>
-    <tr data-status="no"><td><input type="checkbox"></td><td data-label="項目" class="item-name">車頂橫桿 / 車頂箱</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因">地下停車場限高 190cm，車頂箱也無處收納；單裝橫桿目前沒有實際用途。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">xBloom Studio 出門 / 大型行動電源 / 投影機</td><td data-label="狀態"><span class="badge no">不帶</span></td><td data-label="原因">成本與風險太高；MacBook + PD 行動電源足夠 2 天 1 夜。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">車載冰箱 / 行動馬桶 / 洗澡帳</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因">會選有冰箱、廁所、可洗澡的露營區；已經有 Coleman 保冷袋與冰磚。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">EXPED MegaMat Duo 10 M</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因"><b>183×104cm 放不進 170×100 車內</b>，且 EXPED Duo 系列無更小尺寸。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">Therm-a-Rest NeoAir XTherm NXT</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因"><b>實測：ROCKLAND / Wildholics / 台灣其他通路完全沒進這款，無 Regular Short。</b>改買 XLite NXT R-Short 從 Amazon US 直送。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">Sea to Summit Ether Light XT 168 短版</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因">台灣 ROCKLAND 賣的「女款」實測規格 183×64cm（非 168 短版），仍超出 170 上限。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">PAMABE 整片折疊床墊</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因">PAMABE 5cm 厚整片折疊收納佔 60×30×15cm，F45 後廂塞不下；且 PAMABE 30 種對應車款裡無 BMW。改用 PAMABE 延長墊填縫。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">CARGO 一氧化碳偵測器</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因">使用者決定不採購（不在帳內燒瓦斯料理可降低風險）。如未來改變料理方式建議補上。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">Goal Zero Lighthouse Mini Core</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因"><b>實測：momo 完全沒貨。</b>改 Lighthouse 600（210→600 流明、同樣無段調光）。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">Goal Zero Lighthouse Micro Flash 32005</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因">Goal Zero 原廠已停產；momo 庫存賣完即無。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">Black Diamond Moji Charging Station</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因"><b>實測：momo 完全沒貨</b>，台灣登山店多賣頭燈系列無 Moji 營燈。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">Nitecore LR50 / Naturehike NU05 頭燈</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因">LR50 已停產且非無段調光；Naturehike NU05 momo 沒此型號。改 NEBO Mycro。</td></tr>
-    <tr data-status="no"><td><input type="checkbox"></td><td class="item-name" data-label="項目">一般雙人充氣床 / 大型家用貓別墅</td><td data-label="狀態"><span class="badge no">不買</span></td><td data-label="原因">充氣床多半太寬太晃；大型家用貓別墅太重太高，不適合每次搬運。</td></tr>
-  </tbody></table>
+<section class="system" id="shelter">
+  <h2>B. 車外帳系統（最重要的系統）</h2>
+  <span class="system-budget">小計 NT$ 26,400</span>
+  <div class="system-role">
+    <strong>這個系統做什麼：</strong>OWL VanShelter TC 是你下車後的<strong>客廳 + 廚房 + 貓房 + 雨備區</strong>。撐起後 300×330cm 的空間，貼著 F45 側邊。沒它你車宿就只剩睡在車內+蹲在草地上，下雨就完蛋。所有車外活動都圍繞這個帳。
+  </div>
+
+  <div class="main-item">
+    <div>
+      <h3>主角：OWL CAMP VanShelter TC 車邊帳（黑色）+ TPU 門</h3>
+      <div class="desc">12kg｜300×330cm｜頂高 200cm｜TC 棉布材質（耐用、遮光好、不悶熱）。<strong>不加購車尾連接布</strong>（NT$ 3,280）只當車邊帳。<a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">OWL 官網直購</a>，5/10 實測黑色庫存只剩 2 頂。</div>
+    </div>
+    <div class="price">$20,580</div>
+  </div>
+
+  <div class="components">
+    <div class="comp">
+      <h4><span class="num">1</span>30cm 鍛造釘 × 8 支（主拉點，吃硬地用）</h4>
+      <div class="why">OWL VanShelter TC 有 <strong>8 個主拉點</strong>（4 個角柱 + 4 個側邊風繩）。在碎石地或泥地，30cm 鍛造釘才有足夠深度抓地；20cm 以下在泥地會被風拔起。<strong>30cm × 8 支是最低數量，不能少。</strong></div>
+      <div class="what">momo 搜「Coleman 鍛造釘 30cm」單支 NT$ 250 × 8 或 10 入 NT$ 2,000<span class="p">$2,000</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">2</span>15cm 鍛造釘 × 4 支（輔助點 + 草地用）</h4>
+      <div class="why">如果到比較軟的草地，15cm 已經夠；另外 OWL 帳的 4 個 TPU 門/紗網下緣有<strong>輔助固定點</strong>，這些不承重，用 15cm 即可。也可備用在 30cm 釘斷掉時頂替。</div>
+      <div class="what">momo 搜「鍛造釘 15cm 8 入」<span class="p">$600</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">3</span>銅頭營槌（必買，不能徒手敲）</h4>
+      <div class="why">鍛造釘要敲入硬地需要 5-8kg 力量，用石頭敲會傷釘、用手敲會打到自己。<strong>銅頭可拔釘</strong>（鎚柄末端有勾子），收營時拔釘也用得到。一支抵兩用。</div>
+      <div class="what">momo 搜「NUIT 銅頭營槌」或「Snow Peak Pegging Hammer」<span class="p">$690</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">4</span>3M 反光營繩 5mm × 50m</h4>
+      <div class="why">OWL 帳本身附營繩，但長度通常只夠主拉點。多買 1 捲 50m <strong>切成 8-12 段給輔助拉點 + 風繩加強</strong>。反光款的關鍵是夜間走過外帳不會被繩絆倒，營區辨識度高。多出來可綁東西。</div>
+      <div class="what">momo 搜「3M 反光營繩 50m」<span class="p">$700</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">5</span>PVC 兩用沙袋 × 4 個（抗風壓重）</h4>
+      <div class="why">綁在外帳 4 個主柱底部。遇 6 級以上強風時，鍛造釘還抓得住地，但帳布會被吹飛變形，沙袋給<strong>柱底額外重量穩定</strong>。可裝水或裝沙，現場裝水免攜重物。每個約 8-10kg。</div>
+      <div class="what">momo 搜「天幕沙袋 4 入 PVC」<span class="p">$315</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">6</span>PVC 270×270 地布</h4>
+      <div class="why">鋪在外帳內側整片，<strong>防潮 + 防泥 + 防磨損</strong>。OWL 帳內部 300×330cm，PVC 270×270 比帳內小一圈是故意的（要露出 15-30cm 邊緣，讓水流到地布外不會積在裡面）。</div>
+      <div class="what">momo 搜「PVC 270 地布」<span class="p">$725</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">7</span>QMAT 12mm 巧拼 × 4 入</h4>
+      <div class="why"><strong>不必鋪整個地布上方</strong>，只鋪「人會坐/站的活動區」就好。4 片 60×60cm 拼起來 = 120×120cm，正好給兩張椅子 + 桌子下方。12mm 厚度耐踩、隔涼、墊高物品避免接觸潮地。</div>
+      <div class="what">momo 搜「QMAT 巧拼 12mm 4 入」<span class="p">$790</span></div>
+    </div>
+  </div>
+
+  <div class="advice">
+    <h4>⚠ 顧問建議與陷阱</h4>
+    <ul>
+      <li><strong>釘子總數心法</strong>：30cm×8（主）+ 15cm×4（輔）+ 備用 4 支 = <strong>共 16 支</strong>。我列的 12 支是最低數量，預算允許多買 4 支備用永遠不嫌多（會折斷或掉）。</li>
+      <li><strong>下釘角度</strong>：鍛造釘要朝外傾斜 45 度（不是垂直），才能用槓桿原理對抗繩子的拉力。垂直插的釘子拉一下就鬆。</li>
+      <li><strong>沙袋分配</strong>：4 個沙袋全部裝水時總重 32-40kg，<strong>不要全部裝在 F45 後廂同一側</strong>，會傷懸吊。建議行李廂左右各 1 個 + 後座空間 2 個。</li>
+      <li><strong>OWL 自附配件確認</strong>：OWL VanShelter TC 已附「吸盤、營繩、鋁鍛營釘」（基本 8 支）。如果你信任 OWL 原廠釘，可以只買 4 支 30cm 補主拉點 + 銅頭營槌 + 反光繩，省 NT$ 1,500。但 OWL 原廠釘只有 25cm，硬地強風時建議升級到 30cm。</li>
+      <li><strong>不買項目</strong>：不要買「天幕補強支柱」（VanShelter TC 是自立式不需要）、不要買「地釘鎚」（銅頭營槌一支搞定）。</li>
+    </ul>
+  </div>
 </section>
 
-<section id="owned" class="card">
-  <div class="section-title"><h2>已經有的裝備</h2><span class="hint">不重複購買</span></div>
-  <table><thead><tr><th></th><th>項目</th><th>數量</th><th>備註</th></tr></thead><tbody>
-    <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name" data-label="項目">Coleman 35L 終極保冷袋</td><td class="qty" data-label="數量">2 個</td><td data-label="備註">一個放肉品/需冷藏食材，一個放飲料/水果/備用冰磚。</td></tr>
-    <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name" data-label="項目">CAPTAIN STAG 直立式保冷冰磚 250g</td><td class="qty" data-label="數量">多組</td><td data-label="備註">搭配營地冰箱輪替。</td></tr>
-    <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name" data-label="項目">爐具 / 鍋具 / 棉被</td><td class="qty" data-label="數量">已有</td><td data-label="備註">不重複購買；鍋具確認是否有平底鍋。</td></tr>
-    <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name" data-label="項目">貓外出籠 / 貓胸背帶 / MacBook</td><td class="qty" data-label="數量">已有</td><td data-label="備註">貓外出籠行車使用；胸背帶繼續訓練。</td></tr>
-    <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name" data-label="項目">Anker 737 PowerCore 24K + PD 線材</td><td class="qty" data-label="數量">1 顆 / 多條</td><td data-label="備註">已有 140W PD 行動電源；MacBook 滿速、手機快充。</td></tr>
-    <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name" data-label="項目">人用醫藥包</td><td class="qty" data-label="數量">1 包</td><td data-label="備註">已備齊普拿疼、表飛鳴、優碘棉片、OK 繃等。</td></tr>
-    <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name" data-label="項目">兩件式雨衣</td><td class="qty" data-label="數量">2 套</td><td data-label="備註">突發大雨用。</td></tr>
-    <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name" data-label="項目">貓砂盆</td><td class="qty" data-label="數量">1 個</td><td data-label="備註">已有，露營直接帶。</td></tr>
-  </tbody></table>
+<section class="system" id="cat">
+  <h2>C. 貓咪系統</h2>
+  <span class="system-budget">小計 NT$ 3,518</span>
+  <div class="system-role">
+    <strong>這個系統做什麼：</strong>給 5.5kg 聰明貓<strong>足夠活動空間（不只是外出籠那麼小）+ 100% 防脫逃 + 不被風吹移位 + 溫度監控</strong>。重點：純布製拉鍊帳篷對聰明貓不夠安全（會推開拉鍊或撕網紗）；家用大型貓別墅又太占 F45 後廂。所以選<strong>小型鐵製摺疊籠</strong>。
+  </div>
+
+  <div class="main-item">
+    <div>
+      <h3>主角：匠俱 小型貓狗摺疊籠 70×50×57cm</h3>
+      <div class="desc">鐵製方管，金屬門無拉鍊（100% 防脫逃）、摺疊後變薄板狀（70×50×~5cm，可塞 F45 後廂底部）、重量約 4-6kg。展開後給貓<strong>比外出籠大 5 倍的活動空間</strong>，可同時放水碗、食碗、貓砂盆。<a href="https://m.momoshop.com.tw/search.momo?searchKeyword=%E5%8C%A0%E4%BF%B1+%E8%B2%93%E7%8B%97%E7%B1%A0+70x50x57" target="_blank">momo 搜「匠俱 70x50x57」</a></div>
+    </div>
+    <div class="price">$1,573</div>
+  </div>
+
+  <div class="components">
+    <div class="comp">
+      <h4><span class="num">1</span>25mm 壓扣束帶 × 6 條（固定貓籠主框架）</h4>
+      <div class="why">即使是鐵製籠也可能被貓在內跳動移位 5-10cm。<strong>用束帶把貓籠主框架綁到外帳的支柱腳</strong>（不是綁細鐵網！會傷網），這樣整個籠子被「錨定」在外帳裡，貓再聰明也推不走。6 條：4 個籠角 + 2 條備用。</div>
+      <div class="what">momo 搜「25mm 壓扣束帶 6 入」<span class="p">$150</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">2</span>D 型旋鎖登山扣 × 4 個（雙重鎖門）</h4>
+      <div class="why">匠俱貓籠原廠是「彈簧扣」門鎖 — <strong>聰明貓的爪可以撥開彈簧扣！</strong>必須在門外側加「Screw Lock 旋鎖登山扣」，旋鎖需要轉動才能開，貓做不到。4 個：1 個給主門 + 1 個給上門（如果有）+ 2 條備用。</div>
+      <div class="what">momo 搜「D 型旋鎖登山扣 4 入 鋁合金」<span class="p">$165</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">3</span>SwitchBot Meter Plus（溫度監控）</h4>
+      <div class="why">夏天外帳容易悶熱（OWL TC 棉透氣但仍 +5°C），冬天則風吹較涼。<strong>放一顆在貓籠內 + 一顆在你睡的車內</strong>，手機 App 即時看溫差。差超過 3°C 或貓籠超過 30°C 要警覺把貓接到車內冷氣下。</div>
+      <div class="what"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13664229" target="_blank">SwitchBot Meter Plus（建議買 2 顆，貓籠+車內各一）</a><span class="p">$1,380（×2）</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">4</span>矽膠折疊水/食碗 × 2</h4>
+      <div class="why">家裡有自動飲水機但<strong>不帶</strong>（電力風險 + 體積大）。露營改用矽膠折疊碗手動加水。矽膠是因為可<strong>壓平收納</strong>、又不會像不鏽鋼那樣讓水變味。1 個給水、1 個給乾糧。</div>
+      <div class="what">momo 搜「矽膠折疊寵物碗」<span class="p">$200</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">5</span>HOOMENT 寵物急救包</h4>
+      <div class="why">露營區離動物醫院通常 30-60 分鐘。萬一貓<strong>外傷流血、誤食、過敏</strong>，第一時間止血、消毒、止血粉這幾項能救命。HOOMENT 是台灣品牌專門針對寵物，內容物比一般人用 OK 繃實用。</div>
+      <div class="what"><a href="https://www.hooment.com/product-page/hooment-%E6%80%A5%E6%95%91%E5%8C%85" target="_blank">HOOMENT 官網訂（momo 沒貨）</a><span class="p">$590-890</span></div>
+    </div>
+  </div>
+
+  <div class="skipped">
+    <strong>砍掉的：</strong>SKYLIFE 摺疊貓籠（家用四層太大占空間）、純布製八角寵物帳篷（聰明貓會撥拉鍊不安全）、寵物自動飲水機（已有但不帶，露營電力風險）、貓砂盆（已有，露營直接帶）、貓行車外出籠/胸背帶（已有）。
+  </div>
+
+  <div class="advice">
+    <h4>⚠ 顧問建議與陷阱</h4>
+    <ul>
+      <li><strong>貓籠位置</strong>：放在外帳裡，但要<strong>遠離爐火區（廚房側）至少 1.5m</strong>，避免油煙嗆貓 + 火源風險。</li>
+      <li><strong>白天不要把貓單獨留車內</strong>：F45 黑色車身夏天日曬 30 分鐘可達 50°C，密閉車內 5 分鐘就可能讓貓中暑。出去用餐/上廁所要把貓放外帳貓籠+ SwitchBot 監控。</li>
+      <li><strong>夜間貓睡哪</strong>：原計畫是夜間貓睡外帳貓籠，人睡車內。但如果氣溫低於 15°C 或下雨，<strong>把貓接到車內外出籠</strong>（已有的），跟你們一起睡會更安全。</li>
+      <li><strong>適應訓練</strong>：第一次帶貓出去前，至少先在家放貓籠 1 週讓貓熟悉。直接帶出去貓會壓力大叫整晚。</li>
+      <li><strong>不要省 HOOMENT 急救包</strong>：你不能省這個。買一個放車內隨車。</li>
+    </ul>
+  </div>
 </section>
 
-<section id="sleep" class="card">
-  <div class="section-title"><h2>A. 車內睡眠系統</h2><span class="hint">Amazon US 直送 NeoAir 短版 ×2 · <b>小計約 NT$ 19,200</b></span></div>
-  <div class="notice warn"><strong>實測重點：</strong>NeoAir XLite NXT Regular Short（167×51×7.6cm） 在台灣完全買不到（ROCKLAND 整個 NeoAir 系列只剩兩款且售完）。Amazon US <b>直送台灣免運</b>，含進口關稅 NT$ 7,419/張，2026/05/10 庫存「Only 1-3 left」需盡快下單。預計 5/18-19 到貨（8-9 天）。兩張並排 168×102 在 170×100 範圍內（寬度只超 2cm，可接受）。</div>
-  <table><thead><tr><th></th><th>項目</th><th>品牌 / 規格</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">車宿主床墊</td><td data-label="品牌 / 規格"><a href="https://www.amazon.com/Therm-Rest-Ultralight-Backpacking-Sleeping/dp/B0CS4NHPVP/" target="_blank">Therm-a-Rest NeoAir XLite NXT Regular Short @ Amazon US</a><br><span class="tag ok">167×51×7.6cm</span><span class="tag ok">R 4.5 全季</span><span class="tag ok">收納像 1L 寶特瓶</span><span class="tag">⚠ 庫存緊</span></td><td class="qty" data-label="數量">2 張</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註"><b>NT$ 6,259/張 + 進口稅 NT$ 1,159/張 = NT$ 7,419/張，雙張 NT$ 14,838</b>。FREE Shipping to Taiwan，預計 5/18-19 到貨。<b>注意：實測 5/10 庫存「Only 1 left」，需盡快下單。</b>附 Pump Sack（充氣袋）+ 收納袋 + 修補包，不需另購電動幫浦。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">車內平整化（縫隙填補）</td><td data-label="品牌 / 規格"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=12979940" target="_blank">PAMABE OUTDOOR 車泊座椅延長墊-雙座款 74×126cm</a></td><td class="qty" data-label="數量">1 組</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註"><b>NT$ 1,580 @ momo</b>（特價約 NT$ 1,422）。F45 後座放倒後與後廂之間的階差填補；<b>實測：PAMABE 30 種對應車款無 BMW</b>，故改用通用延長墊。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">遮光與防蚊（車型專用）</td><td data-label="品牌 / 規格"><a href="https://shopee.tw/bmw-2%E7%B3%BB%E9%81%AE%E9%99%BD%E7%B0%BE-F45-2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B4%97%E7%B6%B2-%E7%A3%81%E5%90%B8%E9%81%AE%E9%99%BD%E7%B0%BE-%E5%AF%B6%E9%A6%AC2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B0%BE-%E6%B1%BD%E8%BB%8A%E7%B4%97%E7%AA%97-%E9%98%B2%E8%9A%8A%E8%9F%B2-%E5%B0%88%E7%94%A8%E6%B1%BD%E8%BB%8A%E9%81%AE%E9%99%BD%E7%B0%BE-%E8%BB%8A%E7%94%A8%E7%AA%97%E7%B0%BE-i.1040634028.23161644796" target="_blank">蝦皮：BMW 2 系 F45 磁吸遮陽簾 + 車窗紗網</a></td><td class="qty" data-label="數量">1 車份</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註">用戶找到的蝦皮 F45 專用磁吸款（<b>同時具遮陽 + 紗窗防蚊功能</b>），約 <b>NT$ 1,500–2,500</b>，下單前先私訊確認對應 2015 年式 218d。</td></tr>
-    <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name" data-label="項目">棉被壓縮 / 抽氣</td><td data-label="品牌 / 規格"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13827772" target="_blank">FLEXTAIL Tiny Pump 2X 套組 @ momo</a></td><td class="qty" data-label="數量">0–1 組</td><td data-label="狀態"><span class="badge suggest">視棉被體積</span></td><td data-label="備註">NeoAir 用內附 Pump Sack 即可，<b>FLEXTAIL 主要給棉被真空袋抽氣</b>。momo 套組附真空袋約 NT$ 1,490–1,690。</td></tr>
-    <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name" data-label="項目">防水收納袋</td><td data-label="品牌 / 規格"><a href="https://www.daoyen27.com/collections/naturehike" target="_blank">Naturehike Dry Bag 20L + 30L @ 野道家</a></td><td class="qty" data-label="數量">2 個先買</td><td data-label="狀態"><span class="badge suggest">建議</span></td><td data-label="備註">20L + 30L 約 <b>NT$ 800–1,200</b>。野道家併單 OFFLINE 桌一次運。</td></tr>
-  </tbody></table>
+<section class="system" id="table">
+  <h2>D. 桌面 / 收納系統</h2>
+  <span class="system-budget">小計 NT$ 10,620</span>
+  <div class="system-role">
+    <strong>這個系統做什麼：</strong>外帳裡的「<strong>廚房+餐桌+客廳茶几</strong>」，加上 F45 後廂的雜物收納。OFFLINE IGT 桌是核心（你選擇了），上面可放 SOTO 爐 / 餐點 / 飲料；旁邊掛 OWL 瀝水袋瀝洗好的餐具；THOR 兩個收納箱分管「3C 線材小物」與「料理大件」。
+  </div>
+
+  <div class="main-item">
+    <div>
+      <h3>主角：OFFLINE 離線桌組 IGT（兩單位、黑色）</h3>
+      <div class="desc">含桌板 + 框架，鋁合金 + 鋼結構，黑色霧面，可掛配件、未來想升級滑軌也支援。<a href="https://www.daoyen27.com/collections/offline-%E9%9B%A2%E7%B7%9A%E6%A1%8C" target="_blank">野道家（桃園實體店或線上）</a></div>
+    </div>
+    <div class="price">$6,880</div>
+  </div>
+
+  <div class="components">
+    <div class="comp">
+      <h4><span class="num">1</span>OWL DBD-IGTN 自立式一單位瀝水網袋</h4>
+      <div class="why">OFFLINE 桌的「<strong>一單位</strong>」可以裝這個瀝水袋取代桌板，餐具洗完直接放裡面瀝乾。自立式設計即使單位沒接桌板也能站立。<strong>跟 OFFLINE 桌完全相容</strong>（IGT 規格統一）。</div>
+      <div class="what"><a href="https://www.owlcamptw.com/zh-TW/products/dbd-igtn" target="_blank">OWL DBD-IGTN（OWL 官網一起併單）</a><span class="p">$980</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">2</span>THOR 22L 收納箱（小物 / 3C / 線材）</h4>
+      <div class="why">放會分散的小東西：頭燈、行動電源、PD 線、束帶、登山扣、多功能鉗、急救包、防蚊液。<strong>22L 剛好不會塞太多忘記放在哪</strong>。THOR 是堆疊式收納箱，可疊在 53L 上。</div>
+      <div class="what"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11271557" target="_blank">THOR 22L 黑色 @ momo</a><span class="p">$1,180</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">3</span>THOR 53L 收納箱（料理 / 餐具 / 大件）</h4>
+      <div class="why">放會出爐子來用的東西：爐具、鍋具、平底鍋、瓦斯罐、餐具、保鮮盒、調味料、矽膠水盆、紙巾、垃圾袋。<strong>53L 是一頓飯所有東西的尺寸</strong>。可疊在 22L 下。</div>
+      <div class="what"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11284198" target="_blank">THOR 53L 黑色 @ momo</a><span class="p">$1,580</span></div>
+    </div>
+  </div>
+
+  <div class="advice">
+    <h4>⚠ 顧問建議與陷阱</h4>
+    <ul>
+      <li><strong>OFFLINE 桌組合邏輯</strong>：兩單位 = 兩個「方塊位置」。常見配置是「一單位放爐具 + 一單位放瀝水袋」或「一單位放桌板當切菜板 + 一單位放瀝水袋」。<strong>不需要把兩單位都鋪桌板</strong>，留一個空位給瀝水袋是 IGT 系統的精髓。</li>
+      <li><strong>滑軌延後</strong>：OFFLINE × OWL 滑軌（NT$ 1,980）很美但是預購、且實際使用 2 天 1 夜不太需要。露一次後再決定要不要升級。</li>
+      <li><strong>THOR 兩箱裝法</strong>：22L 放車內前座副駕腳邊（隨時拿）、53L 放後廂底部（穩定）。<strong>不要堆在駕駛位後</strong>，急煞時會飛。</li>
+      <li><strong>不買項目</strong>：不要買 OFFLINE 跨接鐵板（你還沒有 75L THOR 箱，跨接不上）、不要買原木桌板（不耐潮，露營區晚上會凝水）。</li>
+    </ul>
+  </div>
 </section>
 
-<section id="shelter" class="card">
-  <div class="section-title"><h2>B. 車外帳 / 客廳區</h2><span class="hint">OWL 官網直購（不加車尾連接布）· <b>小計約 NT$ 24,400</b></span></div>
-  <div class="notice"><strong>實測：</strong>OWL VanShelter TC 帳篷本體 NT$ 18,800（黑色庫存 2 / 沙色庫存 4，建議盡快下單）+ TPU 門 NT$ 1,780。使用者選擇<b>不加</b>車尾連接布（NT$ 3,280）以省預算，只當車邊帳使用。</div>
-  <table><thead><tr><th></th><th>項目</th><th>品牌 / 規格</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">車邊帳</td><td data-label="品牌 / 規格"><a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">OWL CAMP VanShelter TC 帳篷 ST-19FA</a><br><span class="tag ok">12kg</span><span class="tag ok">300×330cm</span><span class="tag ok">頂高 200cm</span></td><td class="qty" data-label="數量">1 頂</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註"><b>NT$ 18,800</b>（OWL 官網實測 5/10）。黑庫存 2 / 沙庫存 4。OWL 滿 NT$ 999 免運。</td></tr>
-    <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name" data-label="項目">TPU 門</td><td data-label="品牌 / 規格"><a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">OWL VanShelter TC 專用 TPU 門 ST-19PA</a></td><td class="qty" data-label="數量">1 片</td><td data-label="狀態"><span class="badge suggest">建議</span></td><td data-label="備註"><b>NT$ 1,780</b>（黑庫存 3 / 沙庫存 4）。下雨也能看風景。與帳篷同單。</td></tr>
-    <tr data-status="defer"><td><input type="checkbox"></td><td class="item-name" data-label="項目">車尾連接布</td><td data-label="品牌 / 規格">OWL VanShelter TC 車尾連接布 ST-19LCA</td><td class="qty" data-label="數量">0</td><td data-label="狀態"><span class="badge defer">不買（用戶決定）</span></td><td data-label="備註">NT$ 3,280；用戶決定不加，只當車邊帳。如以後想用「車尾」模式再補。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">地布 / EVA 地墊</td><td data-label="品牌 / 規格">PVC 270×270 地布 + QMAT 12mm 巧拼地墊 4 入</td><td class="qty" data-label="數量">各 1</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註">momo 一單下：PVC 地布 <b>~NT$ 725</b> + QMAT 巧拼 <b>~NT$ 790</b>（搜尋「PVC 地布 270」「QMAT 巧拼」）。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">營釘 / 營繩 / 營槌</td><td data-label="品牌 / 規格">15cm 鍛造釘 ×8 + 30cm 鍛造釘 ×4 + 反光營繩 + 鍛造營槌</td><td class="qty" data-label="數量">1 組</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註">全 momo 一次掃：<a href="https://m.momoshop.com.tw/search.momo?searchKeyword=%E9%8D%9B%E9%80%A0%E7%87%9F%E9%87%98+30cm" target="_blank">30cm 鍛造釘 4 入</a> ~NT$ 390；15cm 鍛造釘 8 入 ~NT$ 345；3M 反光營繩 5mm×50m ~NT$ 700；Snow Peak / NUIT 銅頭營槌 ~NT$ 690。<b>實測 momo 30cm 鍛造釘最低 NT$ 130/支起</b>，10 入便宜款 NT$ 500（如索樂生活）。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">水袋 / 沙袋壓重</td><td data-label="品牌 / 規格">PVC 兩用沙袋/水袋 5–10kg</td><td class="qty" data-label="數量">4 個</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註">momo 搜尋「天幕沙袋 4 入」<b>~NT$ 315</b>。選兩用 PVC 款，現場直接裝水免攜帶重物。</td></tr>
-  </tbody></table>
+<section class="system" id="chair">
+  <h2>E. 椅子</h2>
+  <span class="system-budget">小計 NT$ 5,960</span>
+  <div class="system-role">
+    <strong>這個系統做什麼：</strong>外帳裡兩人主座位。露營區車宿一晚有 4-6 小時在椅子上：吃飯、看書、滑手機、聊天、發呆。<strong>高背 + 頭枕加大版</strong>是露營椅裡少數能「靠著頭休息不用脖子出力」的設計，差別很大。
+  </div>
+
+  <div class="main-item">
+    <div>
+      <h3>主角：OWL CAMP L-230 高背椅頭枕加大版 × 2</h3>
+      <div class="desc">7075 鋁合金骨架｜展開 98×58cm 離地 45cm｜<strong>收納 50×14cm × 1.4kg/張</strong>（可塞 THOR 22L 旁邊）｜耐重 140kg｜黑色款。<a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11653691" target="_blank">momo 多家賣場 NT$ 2,980/張</a></div>
+    </div>
+    <div class="price">$5,960</div>
+  </div>
+
+  <div class="advice">
+    <h4>⚠ 顧問建議</h4>
+    <ul>
+      <li><strong>為什麼買 OWL 不買 Helinox</strong>：Helinox Sunset Chair 雙張要 NT$ 14,000+。OWL 高背椅頭枕加大版是<strong>台灣品牌、收納與舒適度同等級、售後在台灣</strong>。價差 NT$ 8,000 拿來買其他東西。</li>
+      <li><strong>使用陷阱</strong>：鋁合金骨架椅<strong>不要在椅上跳坐</strong>（坐下要先用手扶住椅背）、不要超過 140kg 載重（含你拿的物品）。長期會累積疲勞。</li>
+      <li><strong>收納在 F45 哪裡</strong>：兩張收納袋 50×14cm，疊放在 THOR 22L 旁邊，或塞 PAMABE 延長墊下方。</li>
+    </ul>
+  </div>
 </section>
 
-<section id="cat" class="card">
-  <div class="section-title"><h2>C. 貓咪露營系統</h2><span class="hint">外帳貓籠系統 · <b>小計約 NT$ 3,400</b></span></div>
-  <div class="notice"><strong>實測重點：</strong>原本推薦的 momo 折疊貓籠是「預購 5/25 才出貨」，且實際是「多平台」非「三層」。改 <b>SKYLIFE 摺疊貓籠</b>，現貨多款，立即出貨，最低 NT$ 968 起。</div>
-  <table><thead><tr><th></th><th>項目</th><th>品牌 / 規格</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">摺疊貓籠</td><td data-label="品牌 / 規格"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15061922" target="_blank">免安裝摺疊貓籠（四層）</a></td><td class="qty" data-label="數量">1 個</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註"><b>NT$ 968 起 @ momo</b>（依層數規格）。多門四層方管，現貨可立即出貨。實測選四層比之前看的「三層」更高更舒適，且免安裝。</td></tr>
-    <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name" data-label="項目">行車外出籠 / 胸背帶</td><td data-label="品牌 / 規格">已購買</td><td class="qty" data-label="數量">各 1</td><td data-label="狀態"><span class="badge owned">已有</span></td><td data-label="備註">行車只用外出籠；胸背帶繼續訓練。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">固定束帶</td><td data-label="品牌 / 規格">25mm PP 三齒扣壓扣束帶 ×6</td><td class="qty" data-label="數量">4–6 條</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註"><b>~NT$ 150 @ momo</b>。固定貓籠主框架，不綁細鐵網。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">旋鎖登山扣</td><td data-label="品牌 / 規格">D 型旋鎖登山扣 4 入（鋁合金）</td><td class="qty" data-label="數量">4–6 個</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註">momo 搜尋「D 型旋鎖登山扣 4 入」<b>~NT$ 165</b>。<b>務必選 Screw Lock 旋鎖款</b>，貓爪撥不開彈簧扣。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">水碗 / 食碗</td><td data-label="品牌 / 規格">矽膠折疊水/食碗</td><td class="qty" data-label="數量">2 個</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註">momo 搜尋「矽膠折疊寵物碗」<b>~NT$ 99–199/個</b>。貓砂盆已有不再購買。</td></tr>
-    <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name" data-label="項目">溫濕度計 / 貓急救包</td><td data-label="品牌 / 規格"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13664229" target="_blank">SwitchBot Meter Plus</a> + <a href="https://www.hooment.com/product-page/hooment-%E6%80%A5%E6%95%91%E5%8C%85" target="_blank">HOOMENT 寵物急救包（官網）</a></td><td class="qty" data-label="數量">各 1</td><td data-label="狀態"><span class="badge suggest">建議</span></td><td data-label="備註">SwitchBot Meter Plus <b>NT$ 690 @ momo</b>（手機 App 即時監控，實測 5/10 有貨）；<b>HOOMENT 急救包 momo 沒貨</b>需到官網下單，<b>NT$ 590-890</b>。建議貓帳內 + 車內各放一顆溫濕度計，相差 2°C 以上要警覺。</td></tr>
-  </tbody></table>
+<section class="system" id="power">
+  <h2>F. 照明 / 風扇 / 電力系統</h2>
+  <span class="system-budget">小計 NT$ 11,706</span>
+  <div class="system-role">
+    <strong>這個系統做什麼：</strong>夜間照明（外帳主光 + 多點輔助 + 個人頭燈）、夏季降溫（一台 14 吋無線循環風扇）、電力供應（你的 Anker 737 PD 已有，加 ADAM 動力線把營地市電引入外帳）。<strong>不買大電源/不上車頂太陽能</strong>（用戶決定 + 露營區有市電）。
+  </div>
+
+  <div class="main-item">
+    <div>
+      <h3>主角：CLAYMORE Ultra2 LED 露營燈 黑色（2200 流明）</h3>
+      <div class="desc">外帳主光源，吊在帳頂中央。2200 流明可照亮整個 300×330cm 客廳區，<strong>無段調光</strong>可從 50 流明（不影響睡前對話）調到 2200 流明（深夜找東西）。IP65 防水防塵，三色溫可調。<a href="https://m.momoshop.com.tw/search.momo?searchKeyword=CLAYMORE+Ultra2+%E9%9C%B2%E7%87%9F%E7%87%88+%E9%BB%91" target="_blank">momo 搜「CLAYMORE Ultra2 露營燈 黑」</a></div>
+    </div>
+    <div class="price">$5,120</div>
+  </div>
+
+  <div class="components">
+    <div class="comp">
+      <h4><span class="num">1</span>CLAYMORE 65A+ 夾帽燈 黑 × 2（多點小燈）</h4>
+      <div class="why">主光源只能照中央，<strong>桌上、貓籠旁、車門口都需要補光</strong>。65A+ 是 65 流明夾帽燈，可夾帳篷桿、衣領、桌邊。<strong>2 顆配置：1 顆夾貓籠附近（看貓狀態）+ 1 顆夾椅子旁（看書/吃飯/夜起照路）</strong>。</div>
+      <div class="what">momo 搜「CLAYMORE 65A+ 夾帽燈 黑」單顆 NT$ 972 ×2<span class="p">$1,944</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">2</span>NEBO Mycro 頭燈 × 2（個人用）</h4>
+      <div class="why">夜間離開外帳上廁所、半夜車外處理事情，<strong>頭燈解放雙手</strong>。每人一個。NEBO Mycro 400 流明 USB-C 充電，輕量便宜（NT$ 546/顆），不需登山級。</div>
+      <div class="what"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9764971" target="_blank">NEBO Mycro 黑色 @ momo</a> NT$ 546 ×2<span class="p">$1,092</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">3</span>CLAYMORE V1040 無線循環風扇</h4>
+      <div class="why">台灣 5-9 月外帳裡 30°C+ 是常態，<strong>沒風扇兩人會躺著飆汗</strong>。V1040 是 10,400mAh 內建電池、14 吋葉片、含遙控、四段風速、可吊掛。睡前開最小擋整夜不重充電。風扇是車宿夏天的最大舒適升級。<strong>5/10 實測 momo「售完補貨中」需追蹤</strong>。</div>
+      <div class="what"><a href="https://www.momoshop.com.tw/TP/TP0004289/goodsDetail/TP00042890000079" target="_blank">CLAYMORE V1040 公司貨 @ momo</a><span class="p">$2,900</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">4</span>ADAMOUTDOOR 戶外動力線 10M</h4>
+      <div class="why">營地市電插座通常在 5-10m 外，<strong>用一般家用延長線不防水不防踩</strong>，下雨可能漏電。ADAM 戶外動力線 IP44 防水 + BSMI 認證 + 過載斷電。10m 長度夠 95% 露營區。黑色版。</div>
+      <div class="what"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10806006" target="_blank">ADAMOUTDOOR 動力線 10M 黑 @ momo</a><span class="p">$650</span></div>
+    </div>
+  </div>
+
+  <div class="skipped">
+    <strong>家裡已有不買：</strong>Anker 737 PowerCore 24K（140W PD）+ UGREEN 240W PD 線（已用於 MacBook 與手機）。露營區市電有時不穩，<strong>Anker 737 是備援</strong>，斷電時可頂 1-2 小時筆電/手機/燈具。
+  </div>
+
+  <div class="advice">
+    <h4>⚠ 顧問建議與陷阱</h4>
+    <ul>
+      <li><strong>主燈吊掛方式</strong>：不要直接綁繩吊在 OWL 帳頂的布料上（會撐壞織線）。買 OWL 強力磁鐵掛勾（一組 2 入 NT$ 180）掛在帳內鋼線上，再吊主燈。</li>
+      <li><strong>動力線使用</strong>：把營地市電 → ADAM 動力線 → 拉進外帳 → 接 ADAM 上 3 個插座（一個給 CLAYMORE Ultra2 充電、一個給 V1040 風扇充電、一個給 MacBook 充電）。<strong>不要從車內延長拉到外帳</strong>（車內 12V 不能跨接家電）。</li>
+      <li><strong>風扇開法</strong>：晚上睡覺風扇朝<strong>外帳天花板</strong>（不是吹人臉），讓熱空氣循環。直吹人臉一晚醒來會喉嚨乾。</li>
+      <li><strong>頭燈夜間禮儀</strong>：在外帳裡不開頭燈（怕互閃刺眼），只在離開外帳時戴。</li>
+    </ul>
+  </div>
 </section>
 
-<section id="igt" class="card">
-  <div class="section-title"><h2>D. 桌面 / IGT / THOR 收納</h2><span class="hint">先收納，暫不跨接（滑軌延後）· <b>小計約 NT$ 10,600</b></span></div>
-  <div class="notice"><strong>實測：</strong>OFFLINE 沒有「TBSDARK」這型號，野道家最近的「離線桌組 IGT」實價 <b>NT$ 6,880</b>（不是原估的 3,480）。使用者選擇接受真實價。THOR 22L 實價 NT$ 1,180+ / 53L NT$ 1,580+（也比原估高）。</div>
-  <table><thead><tr><th></th><th>項目</th><th>品牌 / 規格</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">主桌（IGT）</td><td data-label="品牌 / 規格"><a href="https://www.daoyen27.com/collections/offline-%E9%9B%A2%E7%B7%9A%E6%A1%8C" target="_blank">OFFLINE 離線桌組 IGT @ 野道家</a></td><td class="qty" data-label="數量">1 組</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註"><b>NT$ 6,880</b>（野道家實測）。台灣 OFFLINE 經銷以野道家最齊。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">瀝水網袋</td><td data-label="品牌 / 規格"><a href="https://www.owlcamptw.com/zh-TW/products/dbd-igtn" target="_blank">OWL 自立式一單位瀝水網袋 DBD-IGTN</a></td><td class="qty" data-label="數量">1 個</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註"><b>NT$ 980</b>（OWL 官網實測）。與 OWL 帳一起併單。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">收納箱</td><td data-label="品牌 / 規格"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11271557" target="_blank">THOR 22L</a> + <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11284198" target="_blank">THOR 53L</a> @ momo</td><td class="qty" data-label="數量">各 1</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註"><b>22L NT$ 1,180 起 / 53L NT$ 1,580 起</b>（momo 實測 5/10，多家賣場可選）。</td></tr>
-    <tr data-status="defer"><td><input type="checkbox"></td><td class="item-name" data-label="項目">IGT 滑軌（OFFLINE × OWL 聯名）</td><td data-label="品牌 / 規格"><a href="https://www.owlcamptw.com/zh-TW/products/ofwl-igt" target="_blank">OFFLINE × OWL CAMP 一單位雙向滑軌</a></td><td class="qty" data-label="數量">0–1 個</td><td data-label="狀態"><span class="badge defer">延後</span></td><td data-label="備註">NT$ 1,980 預購商品（OWL 6 月底 / OFFLINE 7/20 出貨）。先用一次再決定。</td></tr>
-  </tbody></table>
+<section class="system" id="kitchen">
+  <h2>G. 料理（家裡都有，0 元）</h2>
+  <span class="system-budget">小計 NT$ 0</span>
+  <div class="system-role">
+    <strong>這個系統做什麼：</strong>露營區簡單料理（早餐三明治、晚餐泡麵 + 牛排或炒菜）。你家裡已有的設備全部夠用，<strong>不必為了露營重買一套</strong>。
+  </div>
+
+  <div class="skipped">
+    <strong>從家裡帶就好：</strong>瓦斯爐 / 卡式爐、平底鍋、湯鍋、砧板、刀、保鮮盒、調味料分裝盒、304 不鏽鋼夾鏟、廚房紙巾、垃圾袋、濕紙巾、折疊水盆（如有大鍋大臉盆）。Coleman 35L 保冷袋 + CAPTAIN STAG 冰磚也已有。
+  </div>
+
+  <div class="advice">
+    <h4>⚠ 顧問建議</h4>
+    <ul>
+      <li><strong>料理動線</strong>：把 53L THOR 箱當作「臨時廚房櫃」，需要拿東西時打開蓋子整箱看。<strong>不要把所有東西都攤在桌上</strong>，桌面要留給切菜跟放鍋具。</li>
+      <li><strong>保冷袋使用</strong>：Coleman 保冷袋 + 冰磚撐 24-36 小時。第一夜的冰肉品 / 啤酒沒問題，第二夜要早上去營地冰箱換冰塊。</li>
+      <li><strong>調味料分裝</strong>：家裡的醬油、鹽、胡椒等用 5ml 小罐分裝（不要整罐帶），帶 1 包夾鏈袋當垃圾分類袋。</li>
+      <li><strong>陷阱</strong>：不要在 OWL 帳內用瓦斯爐做大火爆炒（油煙會嗆貓 + 煙囪孔不能完全排煙）。爆炒移到外帳邊緣或外面，貓籠遠離爐火 1.5m。</li>
+    </ul>
+  </div>
 </section>
 
-<section id="chair" class="card">
-  <div class="section-title"><h2>E. 椅子</h2><span class="hint">OWL CAMP 高背椅頭枕加大版 ×2 · <b>小計 NT$ 5,960</b></span></div>
-  <table><thead><tr><th></th><th>項目</th><th>品牌 / 規格</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">高背椅</td><td data-label="品牌 / 規格"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11653691" target="_blank">OWL CAMP L-230 高背椅 頭枕加大版 @ momo</a><br><span class="tag ok">7075 鋁合金</span><span class="tag ok">展開 98×58cm</span><span class="tag ok">收納 50×14cm / 1.4kg</span><span class="tag ok">耐重 140kg</span></td><td class="qty" data-label="數量">2 張</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註"><b>NT$ 2,980/張，2 張 NT$ 5,960 @ momo</b>（實測 5/10 多家賣場有貨：L-230 / 滿版頭枕加大版 / 網布版 等多選擇）。</td></tr>
-  </tbody></table>
+<section class="system" id="safety">
+  <h2>H. 安全 / 工具 / 清潔系統</h2>
+  <span class="system-budget">小計 NT$ 2,058</span>
+  <div class="system-role">
+    <strong>這個系統做什麼：</strong>意外時救命用（滅火毯、滅火瓶、多功能鉗）+ 蚊蟲防護（174T 派卡瑞丁）+ 露營後清潔（速乾巾）。家裡的醫藥包、兩件式雨衣、拖鞋、掃把都可直接帶。
+  </div>
+
+  <div class="components">
+    <div class="comp">
+      <h4><span class="num">1</span>多功能鉗 16 合 1 + 束線帶 + 防水布膠</h4>
+      <div class="why">露營區突發狀況：營釘卡死要拔（鉗子）、外帳布破要急救（布膠）、繩子要快速綁東西（束線帶）。多功能鉗一支抵 5 樣工具。<strong>放車內前座副駕腳邊</strong>，緊急時 5 秒拿到。</div>
+      <div class="what">momo 搜「多功能鉗 16 合 1」NT$ 250 + 束線帶 100 入 NT$ 50 + 防水布膠 NT$ 80<span class="p">$380</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">2</span>ALSTRONG 滅火毯 1×1m + FIRE OUT 滅火瓶</h4>
+      <div class="why">瓦斯爐起火是最常見的露營火災。<strong>滅火毯</strong>蓋在小火上 5 秒撲滅，不會像水/泡沫滅火器到處噴弄濕食物。<strong>FIRE OUT 是小型泡沫</strong>，用於滅火毯處理不來的小火（噴 1-2 秒）。兩個放外帳爐邊伸手可及處。</div>
+      <div class="what"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=7929209" target="_blank">ALSTRONG 滅火毯 momo</a> NT$ 249 + FIRE OUT 600ml NT$ 199<span class="p">$450</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">3</span>174T 派卡瑞丁 20% 防蚊液</h4>
+      <div class="why">台灣中低海拔露營區小黑蚊密度極高，<strong>派卡瑞丁 20% 是 WHO 建議成分</strong>（孕婦/嬰兒可用），比 DEET 對皮膚溫和、不溶解塑膠（不會傷遮陽簾、登山扣、相機）。1 瓶 60ml 撐 2 人 5-6 次露營。</div>
+      <div class="what"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13393340" target="_blank">174T 60ml @ momo</a><span class="p">$280</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">4</span>麂皮速乾巾 × 2（你說家裡沒有，要買）</h4>
+      <div class="why">擦淋雨後的地布、桌面、椅子；擦洗澡後的身體；擦貓籠不慎打翻的水。<strong>麂皮材質吸水 5 倍、可擰乾立刻再用、快乾</strong>，比毛巾省一半空間。2 條剛好兩人各一。</div>
+      <div class="what">momo 搜「麂皮速乾巾 30×40cm 2 入」<span class="p">$98</span></div>
+    </div>
+
+    <div class="comp">
+      <h4><span class="num">5</span>防水袋 30L + 10L（棉被/濕衣物分裝）</h4>
+      <div class="why">兩人棉被裝 30L 防水袋（防地面潮濕、防 F45 後廂滲水）；<strong>淋雨後的衣物 / 洗澡後的濕衣物</strong>裝 10L 小袋獨立放（不能跟乾淨的棉被混！）。乾衣物用家裡塑膠袋分裝。</div>
+      <div class="what">momo 搜「Naturehike 防水袋 30L」NT$ 600 + 「防水袋 10L」NT$ 250<span class="p">$850</span></div>
+    </div>
+  </div>
+
+  <div class="skipped">
+    <strong>家裡已有不買：</strong>人用醫藥包、兩件式雨衣、EVA 包頭拖鞋、折疊掃把、貓砂盆。CARGO 一氧化碳偵測器 — 不採購（不在外帳燒柴爐 + 不在車內用瓦斯爐 = 風險低）。
+  </div>
+
+  <div class="advice">
+    <h4>⚠ 顧問建議與陷阱</h4>
+    <ul>
+      <li><strong>滅火毯位置</strong>：固定在 OFFLINE 桌側邊掛勾或 THOR 53L 蓋子內側，「<strong>離爐子最近、但不會被爐火燒到</strong>」的位置。不要收進收納箱深處（緊急時拿不到）。</li>
+      <li><strong>防蚊液用法</strong>：出發前先噴衣物（不是皮膚）外側 + 帽子 + 鞋面。皮膚只噴脖子手腕等暴露部位。<strong>小黑蚊喜歡腳踝</strong>，特別噴。</li>
+      <li><strong>不買 CARGO 一氧化碳偵測器</strong>：你不在帳內燒柴爐、瓦斯爐爆炒移到外帳邊緣或外面。如果未來改變料理方式（要在 OWL 帳內用煙囪柴爐），必須立刻補上 NT$ 1,400 的 CARGO 偵測器。</li>
+      <li><strong>麂皮速乾巾陷阱</strong>：第一次用前要先在家洗一次（去除化學殘留）。</li>
+    </ul>
+  </div>
 </section>
 
-<section id="power" class="card">
-  <div class="section-title"><h2>F. 照明 / 風扇 / 小電力</h2><span class="hint">小燈多點 + MacBook + Anker 737（已有）· <b>小計約 NT$ 13,200</b></span></div>
-  <table><thead><tr><th></th><th>項目</th><th>品牌 / 規格</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">主要小燈（無段調光）</td><td data-label="品牌 / 規格"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9794197" target="_blank">Goal Zero Lighthouse 600 多向式 LED 營燈 GZ-32010</a><br><span class="tag ok">600 流明</span><span class="tag ok">無段調光</span><span class="tag ok">5,200mAh 行動電源</span><span class="tag ok">手搖搖桿緊急充電</span></td><td class="qty" data-label="數量">3 顆</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註"><b>NT$ 2,860/顆 @ momo，3 顆 NT$ 8,580</b>（實測 5/10）。<b>取代「Lighthouse Mini Core」（momo 沒貨）</b>。流明翻倍、附手搖緊急充電。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">頭燈</td><td data-label="品牌 / 規格"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9764971" target="_blank">NEBO Mycro 輕便頭燈 USB 400 流明 IPX4</a></td><td class="qty" data-label="數量">2 個</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註"><b>NT$ 546/顆，2 顆 NT$ 1,092 @ momo</b>（實測 5/10）。<b>取代消失的 Naturehike NU05</b>，流明更高更便宜。要更耐用可選 NEBO Master USB 1000 流明 NT$ 2,016 / Fenix HM50R V2 NT$ 2,180。</td></tr>
-    <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name" data-label="項目">無線風扇</td><td data-label="品牌 / 規格"><a href="https://www.momoshop.com.tw/TP/TP0004289/goodsDetail/TP00042890000079" target="_blank">CLAYMORE V1040 無線循環風扇</a><br><span class="tag">10,400mAh</span><span class="tag">14 吋</span><span class="tag">含遙控</span><span class="tag">⚠ 售完補貨中</span></td><td class="qty" data-label="數量">1 台</td><td data-label="狀態"><span class="badge suggest">建議</span></td><td data-label="備註"><b>NT$ 2,900 @ momo（實測 5/10「售完補貨中」）</b>，需追蹤補貨。市售價 3,980。要小台便宜可改 CLAYMORE V600+ 7,800mAh 約 NT$ 2,180。</td></tr>
-    <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name" data-label="項目">戶外動力線</td><td data-label="品牌 / 規格"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10806006" target="_blank">ADAMOUTDOOR 戶外延長動力線 10M</a><br><span class="tag ok">IP44</span><span class="tag ok">BSMI R41048</span><span class="tag ok">台灣製</span></td><td class="qty" data-label="數量">1 條</td><td data-label="狀態"><span class="badge suggest">建議</span></td><td data-label="備註"><b>NT$ 479（特價）/ 599（一般黑色）/ 650（軍綠 / 沙漠）@ momo</b>（實測 5/10，比原估 1,380 便宜一半以上）。將營地市電引入帳內。</td></tr>
-    <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name" data-label="項目">PD 行動電源 + 線</td><td data-label="品牌 / 規格">Anker 737 PowerCore 24K + UGREEN 240W PD 線</td><td class="qty" data-label="數量">1 顆 / 多條</td><td data-label="狀態"><span class="badge owned">已有</span></td><td data-label="備註">使用者已有，不採購。140W PD 滿足 MacBook Pro 滿速 + 手機快充。</td></tr>
-  </tbody></table>
+<section class="budget-summary">
+  <h2>💰 總預算（已扣家裡已有的）</h2>
+  <table>
+    <tr><td>A. 車內睡眠（NeoAir 海外 + 蝦皮遮陽簾 + PAMABE 延長墊 + 黑帆布套）</td><td class="amt">$18,800</td></tr>
+    <tr><td>B. 車外帳（OWL 帳組 + 鍛造釘 + 銅頭營槌 + 反光繩 + 沙袋 + 地布 + 巧拼）</td><td class="amt">$26,400</td></tr>
+    <tr><td>C. 貓咪（匠俱鐵製摺疊籠 + 雙重鎖 + SwitchBot ×2 + HOOMENT 急救包 + 矽膠碗）</td><td class="amt">$3,518</td></tr>
+    <tr><td>D. 桌面收納（OFFLINE 離線桌 IGT + OWL 瀝水袋 + THOR 22+53L）</td><td class="amt">$10,620</td></tr>
+    <tr><td>E. 椅子（OWL L-230 高背椅頭枕加大版 ×2）</td><td class="amt">$5,960</td></tr>
+    <tr><td>F. 照明電力（CLAYMORE Ultra2 + 65A+ ×2 + NEBO Mycro ×2 + V1040 風扇 + ADAM 動力線）</td><td class="amt">$11,706</td></tr>
+    <tr><td>G. 料理（家裡都有）</td><td class="amt">$0</td></tr>
+    <tr><td>H. 安全清潔（多功能鉗 + 滅火毯/瓶 + 防蚊液 + 速乾巾 + 防水袋 30+10L）</td><td class="amt">$2,058</td></tr>
+    <tr class="total"><td><strong>合計</strong></td><td class="amt">$79,062</td></tr>
+  </table>
 </section>
 
-<section id="kitchen" class="card">
-  <div class="section-title"><h2>G. 料理 / 飲食 / 保冷</h2><span class="hint">簡單料理，不做大廚房 · <b>小計約 NT$ 1,500</b></span></div>
-  <table><thead><tr><th></th><th>項目</th><th>品牌 / 規格</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
-    <tr data-status="owned"><td><input type="checkbox"></td><td class="item-name" data-label="項目">爐具 / 鍋具 / 保冷袋 / 冰磚</td><td class="qty" data-label="數量">1 組</td><td data-label="備註">已有；不買車載冰箱。</td><td data-label="狀態"><span class="badge owned">已有</span></td><td data-label="備註">營地冰箱 + Coleman 保冷袋足夠。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">料理小物</td><td data-label="品牌 / 規格">露營砧板雙色 + PP 保鮮盒 4 件套 + 調味料分裝盒 + 304 不鏽鋼夾鏟</td><td class="qty" data-label="數量">1 組</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註">全部 momo 一次下單：砧板雙色 <b>~NT$ 150</b>（生熟分開）；PP 保鮮盒 <b>~NT$ 250</b>；調味料分裝盒 <b>~NT$ 99</b>；304 夾鏟組 <b>~NT$ 250</b>。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">清潔與廚餘</td><td data-label="品牌 / 規格">春風廚房紙巾 + 驅塵氏濕巾 + 台塑 45L 垃圾袋 + 折疊水盆 10L</td><td class="qty" data-label="數量">1 組</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註">全部 momo：紙巾 <b>~NT$ 130</b>；濕巾 <b>~NT$ 99</b>；台塑垃圾袋 <b>~NT$ 89</b>；折疊水盆 <b>~NT$ 199 起</b>。</td></tr>
-    <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name" data-label="項目">保冷袋溫度計</td><td data-label="品牌 / 規格">無線探針電子溫度計</td><td class="qty" data-label="數量">1–2 個</td><td data-label="狀態"><span class="badge suggest">建議</span></td><td data-label="備註">momo 搜尋「電子溫度計」<b>NT$ 99–249/個</b>。買 -50~70°C 範圍含警報款。</td></tr>
-  </tbody></table>
-</section>
-
-<section id="safety" class="card">
-  <div class="section-title"><h2>H. 工具、安全與雜項</h2><span class="hint">現場救命小物（醫藥包/雨衣已有）· <b>小計約 NT$ 1,700</b></span></div>
-  <table><thead><tr><th></th><th>項目</th><th>品牌 / 規格</th><th>數量</th><th>狀態</th><th>備註</th></tr></thead><tbody>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">小工具包</td><td data-label="品牌 / 規格">多功能鉗 16 合 1 + 束線帶 100 入 + 防水布膠</td><td class="qty" data-label="數量">1 包</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註">momo 一次下：多功能鉗 <b>~NT$ 250</b>；束線帶 100 入 <b>NT$ 50</b>；防水布膠 <b>NT$ 80</b>。</td></tr>
-    <tr data-status="suggest"><td><input type="checkbox"></td><td class="item-name" data-label="項目">滅火毯 / 小滅火器</td><td data-label="品牌 / 規格"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=7929209" target="_blank">ALSTRONG 玻纖滅火毯 1×1m</a> + FIRE OUT 簡易泡沫滅火瓶</td><td class="qty" data-label="數量">1 組</td><td data-label="狀態"><span class="badge suggest">建議</span></td><td data-label="備註">滅火毯 <b>NT$ 249</b>（廚房油鍋首選）；FIRE OUT 600ml <b>NT$ 199</b> 或正規 ABC 乾粉 1kg 含車架 <b>NT$ 650–890</b>。</td></tr>
-    <tr data-status="must"><td><input type="checkbox"></td><td class="item-name" data-label="項目">清潔與個人小物</td><td data-label="品牌 / 規格">折疊掃把 + 麂皮速乾巾 + <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13393340" target="_blank">174T 派卡瑞丁 20% 防蚊液</a> + EVA 包頭拖鞋</td><td class="qty" data-label="數量">1 組</td><td data-label="狀態"><span class="badge must">必買</span></td><td data-label="備註">全部 momo：折疊掃把 <b>~NT$ 99</b>；麂皮速乾巾 <b>~NT$ 98 / 2 條</b>；防蚊液 174T 60ml <b>NT$ 280</b>；EVA 包頭拖鞋 <b>~NT$ 400 / 2 雙</b>（避免踩到營釘）。</td></tr>
-  </tbody></table>
-</section>
-
-<section id="shopping" class="card">
-  <div class="section-title"><h2>按平台採購整理（5 通路實測版）</h2><span class="hint">2026/05/10 實測 · <b>合計約 NT$ 79,960</b></span></div>
-  <div class="notice"><strong>5 通路硬性分配（用 agent-browser 逐項實測有貨）：</strong>① <b>Amazon US</b>（NeoAir 床墊海外直送）；② <b>OWL CAMP 官方</b>（VanShelter TC 帳系列）；③ <b>momo</b>（線上一單包山包海）；④ <b>蝦皮</b>（用戶找到的 BMW F45 專屬遮陽簾賣場，唯一）；⑤ <b>野道家</b>（OFFLINE 桌補件）。</div>
-  <div class="notice warn"><strong>採購順序建議：</strong>① 立刻下 <b>Amazon NeoAir ×2</b>（庫存 1 left 警示）→ ② 立刻下 <b>OWL VanShelter TC 黑（庫存 2）+ TPU 門</b> → ③ momo 一單掃完所有小物 → ④ 蝦皮 F45 遮陽簾私訊賣家確認 2015 218d 適配 → ⑤ 野道家 OFFLINE 桌（不急）。</div>
+<section class="system" id="shopping">
+  <h2>採購整理（4 通路 + 1 補件）</h2>
+  <div class="system-role">
+    <strong>採購順序建議：</strong>① <strong>Amazon NeoAir 立刻下單</strong>（庫存緊）→ ② <strong>OWL 官網下 VanShelter TC + TPU 門 + 瀝水袋</strong>（黑色庫存只剩 2 頂）→ ③ momo 線上一次掃完小物 → ④ 蝦皮 F45 遮陽簾私訊確認 → ⑤ 野道家下 OFFLINE 離線桌。
+  </div>
 
   <div class="shop-grid">
-
-    <div class="shop-card priority">
-      <div class="shop-card-head"><h3><a href="https://www.amazon.com/Therm-Rest-Ultralight-Backpacking-Sleeping/dp/B0CS4NHPVP/" target="_blank">① Amazon US（海外直送）</a></h3><span class="shop-total">NT$ 14,838</span></div>
-      <ul>
-        <li><a href="https://www.amazon.com/Therm-Rest-Ultralight-Backpacking-Sleeping/dp/B0CS4NHPVP/" target="_blank">NeoAir XLite NXT Regular Short ×2</a><span class="price">$14,838</span></li>
-      </ul>
-      <div class="shop-note">📦 含進口稅 NT$ 1,159/張 + FREE Shipping to Taiwan，5/18-19 到貨。<b>實測 5/10 庫存 1 left 警示，需立即下單</b>。Amazon Prime 不需訂閱，自動結帳含關稅。</div>
-    </div>
-
-    <div class="shop-card priority">
-      <div class="shop-card-head"><h3><a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">② OWL CAMP 官方</a></h3><span class="shop-total">NT$ 21,560</span></div>
-      <ul>
-        <li><a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">VanShelter TC 帳篷-黑色 ST-19FA</a><span class="price">$18,800</span></li>
-        <li><a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">VanShelter 專用 TPU 門 ST-19PA</a><span class="price">$1,780</span></li>
-        <li><a href="https://www.owlcamptw.com/zh-TW/products/dbd-igtn" target="_blank">DBD-IGTN 自立瀝水網袋</a><span class="price">$980</span></li>
-      </ul>
-      <div class="shop-note">📦 滿 NT$ 999 免運。實測 5/10 帳篷黑色庫存 2 / 沙色庫存 4，需盡快下單。<b>用戶決定不加購車尾連接布（NT$ 3,280），只當車邊帳。</b></div>
-    </div>
-
-    <div class="shop-card priority">
-      <div class="shop-card-head"><h3><a href="https://www.momoshop.com.tw/" target="_blank">③ momo（線上一次下單）</a></h3><span class="shop-total">NT$ 28,300</span></div>
-      <ul>
-        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11653691" target="_blank">OWL CAMP L-230 高背椅頭枕加大版 ×2</a><span class="price">$5,960</span></li>
-        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9794197" target="_blank">Goal Zero Lighthouse 600 ×3</a><span class="price">$8,580</span></li>
-        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15061922" target="_blank">免安裝摺疊貓籠（四層）</a><span class="price">~$1,500</span></li>
-        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11271557" target="_blank">THOR 22L 收納箱</a> + <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11284198" target="_blank">53L</a><span class="price">~$2,760</span></li>
-        <li><a href="https://www.momoshop.com.tw/TP/TP0004289/goodsDetail/TP00042890000079" target="_blank">CLAYMORE V1040 風扇（追蹤補貨）</a><span class="price">$2,900</span></li>
-        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9764971" target="_blank">NEBO Mycro 頭燈 ×2</a><span class="price">$1,092</span></li>
-        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13827772" target="_blank">FLEXTAIL Tiny Pump 2X 套組</a><span class="price">$1,590</span></li>
-        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=12979940" target="_blank">PAMABE 車泊座椅延長墊雙座款</a><span class="price">$1,580</span></li>
-        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13664229" target="_blank">SwitchBot Meter Plus</a><span class="price">$690</span></li>
-        <li><a href="https://www.hooment.com/product-page/hooment-%E6%80%A5%E6%95%91%E5%8C%85" target="_blank">HOOMENT 寵物急救包（官網，momo 沒貨）</a><span class="price">~$740</span></li>
-        <li><a href="https://m.momoshop.com.tw/search.momo?searchKeyword=%E9%8D%9B%E9%80%A0%E7%87%9F%E9%87%98+30cm+%E5%85%A5+%E7%B5%84" target="_blank">30cm 鍛造釘 ×4 + 15cm ×8（搜尋多家挑）</a><span class="price">~$735</span></li>
-        <li><a href="https://m.momoshop.com.tw/search.momo?searchKeyword=3M+%E5%8F%8D%E5%85%89%E7%87%9F%E7%B9%A9+50m" target="_blank">3M 反光營繩 50m</a> + <a href="https://m.momoshop.com.tw/search.momo?searchKeyword=NUIT+%E9%8A%85%E9%A0%AD%E7%87%9F%E6%A7%8C" target="_blank">銅頭營槌</a><span class="price">~$1,390</span></li>
-        <li><a href="https://m.momoshop.com.tw/search.momo?searchKeyword=PVC+270+%E5%9C%B0%E5%B8%83" target="_blank">PVC 270×270 地布</a> + <a href="https://m.momoshop.com.tw/search.momo?searchKeyword=QMAT+%E5%B7%A7%E6%8B%BC+4%E5%85%A5" target="_blank">QMAT 巧拼 4 入</a><span class="price">~$1,515</span></li>
-        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10806006" target="_blank">ADAMOUTDOOR 戶外動力線 10M</a><span class="price">$650</span></li>
-        <li><a href="https://m.momoshop.com.tw/search.momo?searchKeyword=%E5%A4%9A%E5%8A%9F%E8%83%BD%E9%89%97+16%E5%90%88+1" target="_blank">多功能鉗 16 合 1</a> + 束帶 + 布膠<span class="price">~$380</span></li>
-        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=7929209" target="_blank">ALSTRONG 滅火毯</a> + FIRE OUT 滅火瓶<span class="price">~$450</span></li>
-        <li><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13393340" target="_blank">174T 派卡瑞丁防蚊液</a><span class="price">$280</span></li>
-        <li><a href="https://m.momoshop.com.tw/search.momo?searchKeyword=EVA+%E5%8C%85%E9%A0%AD%E6%8B%96%E9%9E%8B" target="_blank">EVA 包頭拖鞋 ×2</a><span class="price">~$400</span></li>
-        <li><a href="https://m.momoshop.com.tw/search.momo?searchKeyword=%E5%A4%A9%E5%B9%95%E6%B2%99%E8%A2%8B+4%E5%85%A5" target="_blank">天幕沙袋 4 入</a> + 紗網 4 片<span class="price">~$615</span></li>
-        <li><a href="https://m.momoshop.com.tw/search.momo?searchKeyword=D%E5%9E%8B%E6%97%8B%E9%8E%96%E7%99%BB%E5%B1%B1%E6%89%A3" target="_blank">D 型旋鎖登山扣</a> + 束帶 + 矽膠折疊水/食碗 ×2<span class="price">~$515</span></li>
-        <li><a href="https://m.momoshop.com.tw/search.momo?searchKeyword=PP+%E4%BF%9D%E9%AE%AE%E7%9B%92+4%E4%BB%B6%E5%A5%97" target="_blank">PP 保鮮盒</a> + 砧板 + 夾鏟 + 紙巾 + 垃圾袋<span class="price">~$1,200</span></li>
-        <li>麂皮速乾巾 + 折疊掃把 + 溫度計（搜尋）<span class="price">~$350</span></li>
-      </ul>
-      <div class="shop-note">📦 信用卡單筆滿 $3,000 享 Mo 幣回饋最高約 7%（這張卡至少回饋 $1,981）。一次下單全套；多筆訂單也可，多半 momo 自家倉直送免運。</div>
+    <div class="shop-card">
+      <h3>① <a href="https://www.amazon.com/Therm-Rest-Ultralight-Backpacking-Sleeping/dp/B0CS4NHPVP/" target="_blank">Amazon US（海外直送）</a></h3>
+      <span class="total">NT$ 14,838</span>
+      <p>NeoAir XLite NXT Regular Short ×2<br/>📦 FREE Shipping，5/18-19 到貨</p>
+      <div class="note">⚠ 庫存緊（5/10 實測 1 left），優先下單。Amazon 自動結算含進口稅。</div>
     </div>
 
     <div class="shop-card">
-      <div class="shop-card-head"><h3><a href="https://shopee.tw/bmw-2%E7%B3%BB%E9%81%AE%E9%99%BD%E7%B0%BE-F45-2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B4%97%E7%B6%B2-%E7%A3%81%E5%90%B8%E9%81%AE%E9%99%BD%E7%B0%BE-%E5%AF%B6%E9%A6%AC2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B0%BE-%E6%B1%BD%E8%BB%8A%E7%B4%97%E7%AA%97-%E9%98%B2%E8%9A%8A%E8%9F%B2-%E5%B0%88%E7%94%A8%E6%B1%BD%E8%BB%8A%E9%81%AE%E9%99%BD%E7%B0%BE-%E8%BB%8A%E7%94%A8%E7%AA%97%E7%B0%BE-i.1040634028.23161644796" target="_blank">④ 蝦皮（用戶找到的賣場）</a></h3><span class="shop-total">~NT$ 2,000</span></div>
-      <ul>
-        <li><a href="https://shopee.tw/bmw-2%E7%B3%BB%E9%81%AE%E9%99%BD%E7%B0%BE-F45-2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B4%97%E7%B6%B2-%E7%A3%81%E5%90%B8%E9%81%AE%E9%99%BD%E7%B0%BE-%E5%AF%B6%E9%A6%AC2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B0%BE-%E6%B1%BD%E8%BB%8A%E7%B4%97%E7%AA%97-%E9%98%B2%E8%9A%8A%E8%9F%B2-%E5%B0%88%E7%94%A8%E6%B1%BD%E8%BB%8A%E9%81%AE%E9%99%BD%E7%B0%BE-%E8%BB%8A%E7%94%A8%E7%AA%97%E7%B0%BE-i.1040634028.23161644796" target="_blank">BMW 2 系 F45 磁吸遮陽簾 + 車窗紗網（同時防蚊蟲）</a><span class="price">~$2,000</span></li>
-      </ul>
-      <div class="shop-note">📦 用戶實際找到的 F45 專用款（同時具遮陽 + 紗窗功能）。下單前先<b>私訊賣家確認 2015 218d 對應</b>，並核對共幾片是否能涵蓋全車（前後車窗 + 三角窗）。蝦皮反爬蟲擋住自動驗證，售價需以蝦皮現場為準。</div>
+      <h3>② <a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">OWL CAMP 官網</a></h3>
+      <span class="total">NT$ 21,560</span>
+      <p>VanShelter TC 黑色 ×1（$18,800）<br/>TPU 門黑色 ×1（$1,780）<br/>DBD-IGTN 瀝水袋 ×1（$980）</p>
+      <div class="note">📦 滿 $999 免運。黑色帳篷庫存 2 / 沙色 4，盡快下單。</div>
     </div>
 
     <div class="shop-card">
-      <div class="shop-card-head"><h3><a href="https://www.daoyen27.com/collections/offline-%E9%9B%A2%E7%B7%9A%E6%A1%8C" target="_blank">⑤ 野道家（OFFLINE 補件）</a></h3><span class="shop-total">NT$ 7,880</span></div>
-      <ul>
-        <li><a href="https://www.daoyen27.com/collections/offline-%E9%9B%A2%E7%B7%9A%E6%A1%8C" target="_blank">OFFLINE 離線桌組 IGT</a><span class="price">$6,880</span></li>
-        <li><a href="https://www.daoyen27.com/collections/naturehike" target="_blank">Naturehike 防水袋 20L + 30L</a><span class="price">~$1,000</span></li>
-      </ul>
-      <div class="shop-note">📍 桃園市桃園區國豐七街 106 號（週三–週日 11:00-21:00，週二休）；或線上下單。<b>實測：野道家 OWL 分類僅 8 件，沒有 VanShelter TC 與頭枕加大椅</b>，這兩款必須去 OWL 官網與 momo。</div>
+      <h3>③ <a href="https://www.momoshop.com.tw/" target="_blank">momo 購物網</a></h3>
+      <span class="total">NT$ 25,964</span>
+      <p>OWL 高背椅頭枕加大版 ×2、Goal Zero / CLAYMORE 燈具、NEBO Mycro 頭燈 ×2、V1040 風扇、ADAM 動力線、匠俱貓籠、SwitchBot ×2、PAMABE 延長墊、鍛造釘 + 營槌 + 反光繩、地布 + 巧拼、沙袋、防水袋、多功能鉗 + 滅火毯 + 174T 防蚊液 + 速乾巾</p>
+      <div class="note">📦 信用卡單筆滿 $3,000 享 Mo 幣回饋最高 7%（這張至少回饋 $1,800）。可分批下，多半 momo 自家倉免運。</div>
     </div>
 
-  </div>
+    <div class="shop-card">
+      <h3>④ <a href="https://shopee.tw/bmw-2%E7%B3%BB%E9%81%AE%E9%99%BD%E7%B0%BE-F45-2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B4%97%E7%B6%B2-%E7%A3%81%E5%90%B8%E9%81%AE%E9%99%BD%E7%B0%BE-%E5%AF%B6%E9%A6%AC2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B0%BE-%E6%B1%BD%E8%BB%8A%E7%B4%97%E7%AA%97-%E9%98%B2%E8%9A%8A%E8%9F%B2-%E5%B0%88%E7%94%A8%E6%B1%BD%E8%BB%8A%E9%81%AE%E9%99%BD%E7%B0%BE-%E8%BB%8A%E7%94%A8%E7%AA%97%E7%B0%BE-i.1040634028.23161644796" target="_blank">蝦皮</a> + <a href="https://www.hooment.com/product-page/hooment-%E6%80%A5%E6%95%91%E5%8C%85" target="_blank">HOOMENT 官網</a></h3>
+      <span class="total">NT$ 3,140</span>
+      <p>BMW 2 系 F45 磁吸遮陽簾 ~$2,000<br/>黑色帆布壓縮袋 ~$400<br/>HOOMENT 寵物急救包 ~$740</p>
+      <div class="note">📦 蝦皮下單前私訊賣家確認 2015 218d 對應。HOOMENT momo 沒貨需官網。</div>
+    </div>
 
-  <div class="notice"><strong>實測 5/10 重要警示彙整：</strong>① <b>NeoAir Regular Short Amazon 庫存只剩 1 left</b>，要立刻下單；② <b>OWL VanShelter TC 帳-黑色庫存 2 / 沙色 4</b>，建議盡快；③ CLAYMORE V1040 momo「售完補貨中」，需追蹤；④ 蝦皮 F45 遮陽簾賣家請先私訊核對車型。</div>
-  <div class="notice"><strong>已扣除「使用者已有」的 5 項：</strong>Anker 737 + PD 線材（原 ~5,650）、人用醫藥包（原 ~499）、兩件式雨衣（原 ~590）、貓砂盆（原 ~399）、CARGO 一氧化碳偵測器（不採購，原 ~1,480）。共省 NT$ 8,618。</div>
+    <div class="shop-card">
+      <h3>⑤ <a href="https://www.daoyen27.com/collections/offline-%E9%9B%A2%E7%B7%9A%E6%A1%8C" target="_blank">野道家（OFFLINE 補件）</a></h3>
+      <span class="total">NT$ 6,880</span>
+      <p>OFFLINE 離線桌組 IGT</p>
+      <div class="note">📍 桃園市桃園區國豐七街 106 號（週三–週日 11:00-21:00，週二休），或線上下單。</div>
+    </div>
+  </div>
 </section>
 
-<section id="loading" class="card">
-  <div class="section-title"><h2>裝車與搭設流程</h2><span class="hint">給現場檢查用</span></div>
-  <div class="split">
-    <div class="list-card"><h3>裝車邏輯</h3><ul><li>重物放低、放車內，不上車頂。</li><li>NeoAir 兩張收納像 1L 寶特瓶，可塞任何空隙。</li><li>PAMABE 延長墊、棉被與外帳放後廂/倒椅區。</li><li>MacBook、Anker 737、手機與貴重物放車內。</li><li>貓行車外出籠固定在車內；SKYLIFE 摺疊貓籠到營地後展開。</li><li>保冷袋不要靠電子設備。</li></ul></div>
-    <div class="list-card"><h3>搭設順序</h3><ol class="sequence"><li>停車，確認風向與車側空間。</li><li>搭 OWL VanShelter TC，先下主營釘與營繩。</li><li>鋪 PVC 地布與 QMAT 巧拼。</li><li>展開 SKYLIFE 摺疊貓籠，束帶固定主框架，門扣加旋鎖扣。</li><li>架 OFFLINE 桌、THOR 22L/53L、瀝水袋與椅子。</li><li>車內擺 PAMABE 延長墊填縫，NeoAir 兩張用 Pump Sack 各充氣 ~30 秒並排。</li><li>晚上人睡車內，貓睡外帳 SKYLIFE 籠；風雨或溫度不對即回車內。</li></ol></div>
+<section class="system" id="loading">
+  <h2>裝車 + 搭設流程</h2>
+  <div class="system-role">
+    <strong>實戰流程：</strong>從家裡出發到營地紮營完成，總共約 60-90 分鐘。提前一晚先把東西裝車，到營地後 30-45 分鐘搭好。
+  </div>
+
+  <h3 style="color:var(--forest); margin-top:18px;">🚙 裝車邏輯（重物低 + 隨手物近）</h3>
+  <ol class="flow">
+    <li><strong>後廂底部</strong>：匠俱貓籠（摺疊薄板）平放鋪底；上層 THOR 53L（料理） + THOR 22L（小物）疊放</li>
+    <li><strong>後座放倒區</strong>：PAMABE 延長墊（折疊狀） + 棉被 30L 防水袋 + OWL 帳收納袋 + OFFLINE 桌 + 兩張高背椅收納袋</li>
+    <li><strong>副駕腳邊</strong>：多功能鉗 + 急救包 + 行車前隨手物（手機架、水壺）</li>
+    <li><strong>副駕座位</strong>：貓行車外出籠（用安全帶固定）</li>
+    <li><strong>車頂</strong>：永遠空著（不上橫桿不上車頂箱不上車頂帳）</li>
+    <li><strong>後廂蓋下方掛勾</strong>：NeoAir 兩個收納袋（像水瓶）+ CLAYMORE V1040 風扇 + Goal Zero 燈具收納袋</li>
+  </ol>
+
+  <h3 style="color:var(--forest); margin-top:18px;">⛺ 搭設順序（30-45 分鐘）</h3>
+  <ol class="flow">
+    <li>停車。確認風向與車側預留 3.5m 空間（OWL VanShelter TC 展開寬度 330cm）。</li>
+    <li>搭 OWL VanShelter TC：先把帳體攤開貼車側，內部 4 根營柱推起，再下 4 個角落 30cm 鍛造釘。</li>
+    <li>下 4 個側邊風繩（用 15cm 釘 + 反光繩），調整繩子鬆緊讓帳體張力一致。</li>
+    <li>掛 TPU 門（用魔鬼氈 + 拉鍊）、加 OWL 強力磁鐵掛勾準備吊燈。</li>
+    <li>鋪 PVC 270×270 地布（整片）→ 在人活動區疊 QMAT 巧拼 4 片。</li>
+    <li>展開匠俱貓籠，<strong>用束帶綁到 OWL 帳柱腳</strong>固定（不會被風吹移位），門扣加 D 型旋鎖扣。</li>
+    <li>架 OFFLINE 離線桌 + OWL 瀝水袋 + 兩張 OWL 高背椅。</li>
+    <li>掛 CLAYMORE Ultra2 主燈於 OWL 磁鐵掛勾、夾 65A+ 在貓籠旁與椅子旁。</li>
+    <li>架 ADAM 動力線從營地市電拉進外帳。</li>
+    <li>車內：放倒後座 + 副駕 → 鋪 PAMABE 延長墊扣到前座椅背 → NeoAir 兩張用 Pump Sack 充氣 30 秒並排。</li>
+    <li>掛 BMW F45 磁吸遮陽簾（睡覺前才掛，白天車內透氣）。</li>
+    <li>把貓從行車外出籠放進外帳貓籠，加 D 型旋鎖扣 + 給水給乾糧。</li>
+    <li>SwitchBot 一顆放貓籠內、一顆放車內。打開 App 確認連線。</li>
+  </ol>
+
+  <div class="advice">
+    <h4>⚠ 收營時順序反過來</h4>
+    <ul>
+      <li>先把貓接回行車外出籠 → 收貓籠（摺疊）→ 收椅子桌子燈具 → 拆貓籠/小物先回 THOR → 拆 OWL 帳（先拔釘再倒柱）→ 收地布 → 排氣 NeoAir → 把車內物品先歸位 → 最後檢查營釘有沒有撿光（最常忘記）。</li>
+    </ul>
   </div>
 </section>
 
-<footer id="sources" class="footer">
-  <h2>參考連結（2026/05/10 實測來源）</h2>
-  <div class="sources">
-    <a href="https://www.amazon.com/Therm-Rest-Ultralight-Backpacking-Sleeping/dp/B0CS4NHPVP/" target="_blank">Amazon US: NeoAir XLite NXT Regular Short（直送台灣 NT$ 7,419/張）</a>
-    <a href="https://cascadedesigns.com/products/neoair-xlite-nxt-sleeping-pad" target="_blank">Therm-a-Rest 官方產品頁（規格參考）</a>
-    <a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">OWL CAMP VanShelter TC 官方頁（NT$ 18,800 / TPU 門 NT$ 1,780）</a>
-    <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11653691" target="_blank">momo OWL CAMP L-230 高背椅頭枕加大版（NT$ 2,980/張）</a>
-    <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9794197" target="_blank">momo Goal Zero Lighthouse 600（NT$ 2,860）</a>
-    <a href="https://www.momoshop.com.tw/TP/TP0004289/goodsDetail/TP00042890000079" target="_blank">momo CLAYMORE V1040 公司貨（補貨中，NT$ 2,900）</a>
-    <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10806006" target="_blank">momo ADAMOUTDOOR 動力線 10M（NT$ 479-650）</a>
-    <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9764971" target="_blank">momo NEBO Mycro 頭燈（NT$ 546/顆）</a>
-    <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15061922" target="_blank">momo 免安裝摺疊貓籠四層（NT$ 968 起）</a>
-    <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11271557" target="_blank">momo THOR 22L 收納箱</a>
-    <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11284198" target="_blank">momo THOR 53L 收納箱</a>
-    <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=12979940" target="_blank">momo PAMABE 車泊座椅延長墊雙座款</a>
-    <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13664229" target="_blank">momo SwitchBot Meter Plus</a>
-    <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=7929209" target="_blank">momo ALSTRONG 滅火毯 1×1m</a>
-    <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13393340" target="_blank">momo 174T 派卡瑞丁防蚊液</a>
-    <a href="https://shopee.tw/bmw-2%E7%B3%BB%E9%81%AE%E9%99%BD%E7%B0%BE-F45-2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B4%97%E7%B6%B2-%E7%A3%81%E5%90%B8%E9%81%AE%E9%99%BD%E7%B0%BE-%E5%AF%B6%E9%A6%AC2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B0%BE-%E6%B1%BD%E8%BB%8A%E7%B4%97%E7%AA%97-%E9%98%B2%E8%9A%8A%E8%9F%B2-%E5%B0%88%E7%94%A8%E6%B1%BD%E8%BB%8A%E9%81%AE%E9%99%BD%E7%B0%BE-%E8%BB%8A%E7%94%A8%E7%AA%97%E7%B0%BE-i.1040634028.23161644796" target="_blank">蝦皮 BMW 2 系 F45 磁吸遮陽簾（用戶提供）</a>
-    <a href="https://www.daoyen27.com/collections/offline-%E9%9B%A2%E7%B7%9A%E6%A1%8C" target="_blank">野道家 OFFLINE 離線桌組 IGT（NT$ 6,880）</a>
-  </div>
+<footer class="refs" id="refs">
+  <h2>參考連結（2026/05 實測）</h2>
+  <a href="https://www.amazon.com/Therm-Rest-Ultralight-Backpacking-Sleeping/dp/B0CS4NHPVP/" target="_blank">Amazon US – NeoAir XLite NXT Regular Short（直送台灣）</a>
+  <a href="https://www.owlcamptw.com/zh-TW/products/st-19fa" target="_blank">OWL CAMP VanShelter TC 官方頁</a>
+  <a href="https://www.owlcamptw.com/zh-TW/products/dbd-igtn" target="_blank">OWL DBD-IGTN 瀝水網袋</a>
+  <a href="https://www.daoyen27.com/collections/offline-%E9%9B%A2%E7%B7%9A%E6%A1%8C" target="_blank">野道家 OFFLINE 離線桌組 IGT</a>
+  <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11653691" target="_blank">momo OWL L-230 高背椅頭枕加大版</a>
+  <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=12979940" target="_blank">momo PAMABE 車泊座椅延長墊雙座款</a>
+  <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11271557" target="_blank">momo THOR 22L 收納箱</a>
+  <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11284198" target="_blank">momo THOR 53L 收納箱</a>
+  <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9764971" target="_blank">momo NEBO Mycro 頭燈</a>
+  <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13664229" target="_blank">momo SwitchBot Meter Plus</a>
+  <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10806006" target="_blank">momo ADAMOUTDOOR 動力線 10M 黑</a>
+  <a href="https://www.momoshop.com.tw/TP/TP0004289/goodsDetail/TP00042890000079" target="_blank">momo CLAYMORE V1040 風扇</a>
+  <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=7929209" target="_blank">momo ALSTRONG 滅火毯</a>
+  <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=13393340" target="_blank">momo 174T 派卡瑞丁防蚊液</a>
+  <a href="https://shopee.tw/bmw-2%E7%B3%BB%E9%81%AE%E9%99%BD%E7%B0%BE-F45-2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B4%97%E7%B6%B2-%E7%A3%81%E5%90%B8%E9%81%AE%E9%99%BD%E7%B0%BE-%E5%AF%B6%E9%A6%AC2%E7%B3%BB%E8%BB%8A%E7%AA%97%E7%B0%BE-%E6%B1%BD%E8%BB%8A%E7%B4%97%E7%AA%97-%E9%98%B2%E8%9A%8A%E8%9F%B2-%E5%B0%88%E7%94%A8%E6%B1%BD%E8%BB%8A%E9%81%AE%E9%99%BD%E7%B0%BE-%E8%BB%8A%E7%94%A8%E7%AA%97%E7%B0%BE-i.1040634028.23161644796" target="_blank">蝦皮 BMW 2 系 F45 磁吸遮陽簾（你提供的賣場）</a>
+  <a href="https://www.hooment.com/product-page/hooment-%E6%80%A5%E6%95%91%E5%8C%85" target="_blank">HOOMENT 寵物急救包官網</a>
 </footer>
-</div>
-</div>
-</main>
 
-<script>
-const key='f45-camping-tested-2026-05-v3';
-const checks=[...document.querySelectorAll('input[type="checkbox"]')];
-const saved=JSON.parse(localStorage.getItem(key)||'{}');
-checks.forEach((c,i)=>{c.checked=!!saved[i]; c.addEventListener('change',()=>{const s={}; checks.forEach((x,j)=>s[j]=x.checked); localStorage.setItem(key,JSON.stringify(s));});});
-const buttons=[...document.querySelectorAll('#filters button')];
-const search=document.getElementById('search');
-let filter='all';
-function apply(){const q=(search.value||'').trim().toLowerCase(); document.querySelectorAll('tbody tr').forEach(tr=>{const status=tr.dataset.status||''; const text=tr.innerText.toLowerCase(); const okF=filter==='all'||status===filter; const okQ=!q||text.includes(q); tr.classList.toggle('hidden',!(okF&&okQ));}); document.querySelectorAll('section.card').forEach(sec=>{if(!sec.querySelector('tbody')) return; const visible=[...sec.querySelectorAll('tbody tr')].some(tr=>!tr.classList.contains('hidden')); sec.classList.toggle('hidden',!visible && (filter!=='all'||q));});}
-buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active')); b.classList.add('active'); filter=b.dataset.filter; apply();}));
-search.addEventListener('input',apply);
-</script>
+</main>
 </body>
 </html>
